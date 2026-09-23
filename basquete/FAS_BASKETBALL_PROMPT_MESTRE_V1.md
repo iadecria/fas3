@@ -295,9 +295,14 @@ superior à de jogo inteiro.
 
 Máximo recomendado: **uma tese SAFE principal por fixture**.
 
-Sem limite global.
-
 SAFE = 0 é resultado válido.
+
+### 🛡️ Trava de Volatilidade de Elenco (Lineup Volatility Protocol)
+- **Filtro de Desfalques de Última Hora em Totais Altos:**
+  - Linhas de **Over Alto (> 175-180 pontos na WNBA ou > 225 na NBA)** só podem receber selo SAFE se **100% dos principais criadores ofensivos e pontuadores primários (Usage Rate > 22%)** estiverem com status ativamente confirmado.
+  - Caso haja jogador-chave em *Questionable*, *Doubtful* ou risco de ser poupado (*Game-Time Decision*), a linha de Over é **automaticamente rebaixada** para PRA CIMA (ATTACK) ou descartada. A ausência de um cestinha destrói a produção coletiva esperada.
+- **Data Quality Gate:**
+  - É proibido conceder SAFE com `DQ MEDIUM` ou `DQ LOW` em partidas de ligas secundárias ou torneios curtos internacionais (TIER_C).
 
 # 12. SAFE+ --- UM DEGRAU ACIMA
 
@@ -588,14 +593,37 @@ metodologia por um único MISS.
 6.  🛡️➕ SAFE+
 7.  🚀 PRA CIMA
 8.  👴 APOSENTAR O NETO
-9.  🧠 Derived Signals
-10. 🔗 Correlation Engine
-11. ❌ Descartados
-12. 📊 Mapa Final
-13. 📸 Snapshot
-14. 📦 FAS_BASKETBALL_EXPORT
+9.  🎫 MÚLTIPLAS / BILHETES DO DIA (SAFE, SAFE+, PRA CIMA, APOSENTAR O NETO)
+10. ⏰ PROTOCOLO LEMBRETE T-60MIN (Confirmação Pré-Jogo)
+11. 🧠 Derived Signals
+12. 🔗 Correlation Engine
+13. ❌ Descartados
+14. 📊 Mapa Final
+15. 📸 Snapshot
+16. 📦 FAS_BASKETBALL_EXPORT
 
 Não reduza a resposta a picks.
+
+# 28A. 🎫 MÚLTIPLAS / BILHETES DO DIA (BASQUETE)
+
+1. **Bilhete SAFE:** Combina as SAFEs de maior solidez (máximo 3 seleções com independência estatística).
+2. **Bilhete SAFE+:** Combina as teses de degrau controlado.
+3. **Bilhete PRA CIMA:** Duplas ou triplas de alta variância/cotação.
+4. **Bilhete APOSENTAR O NETO:** Scanner geral da rodada para bilhete longo de cotação alta.
+
+# 28B. ⏰ PROTOCOLO DE LEMBRETE T-60MIN (CHECK-IN PRÉ-JOGO)
+
+Para qualquer bilhete/múltipla aprovada na rodada de basquete:
+1. **Gatilho de Horário:** Marcar o horário do **primeiro jogo** da rodada a entrar em quadra em qualquer uma das múltiplas.
+2. **Aviso T-60min:** O analista/sistema deve programar/orientar o check-in **exatamente 1 hora antes (T-60 minutos)** do primeiro tip-off.
+3. **Checklist Crítico T-60min (Injury Report Oficial):**
+   - 📋 *Shootaround & Inactives:* Checar o relatório oficial de 60 minutos da liga (ex: injury report oficial da WNBA/NBA ou súmula de aquecimento FIBA).
+   - ⚠️ *Impacto de Ausências:*
+     - Se armador titular ou pivô de proteção de aro for cortado: **CANCELAR** ou **SUBSTITUIR** seleções de Over/Under e Spreads do jogo afetado.
+   - ⚖️ *Decisão de Governança:*
+     - **MANTER:** Se os titulares e rotações principais estiverem ativos e aquecendo.
+     - **ALTERAR:** Rebaixar linha de total ou recalibrar spread se uma segunda unidade entrar.
+     - **CANCELAR / ABORTAR BILHETE:** Se o desfalque afetar o núcleo da tese do bilhete.
 
 # 29. EXPORT V1
 

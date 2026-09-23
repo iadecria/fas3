@@ -152,6 +152,14 @@ poucos condicionais, game state coerente e contrary signals controlados.
 Máximo recomendado: uma tese SAFE principal por fixture. Sem limite
 global.
 
+### 🛡️ Trava de Elegibilidade e Qualidade (SAFE Quality Gates)
+1. **Regra Anti-Zebra / Data Quality Gate:** É PROIBIDO conceder selo SAFE com `DQ MEDIUM` ou `DQ LOW` em estreias continentais ou copas sem amostra consolidada da temporada corrente.
+2. **Park-the-Bus Filter (Filtro de Retranca em Favoritismo Extremo):**
+   - Em partidas de assimetria técnica profunda onde o azarão atua com bloco ultrabaixo/retranca com 10 jogadores atrás da linha da bola (ex: gigantes contra equipes menores de ligas periféricas):
+   - **É PROIBIDO** usar `Team Total Over 1.5` ou `Team Total Over 2.5` como SAFE.
+   - Placares curtos de 1x0 com gol tardio são armadilhas clássicas de variância.
+   - Para esse perfil, a SAFE mandatória deve ser linha estrutural de jogo (`Match Under elástico`, `Match Winner` direto ou `Handicap Asiático Protegido`), nunca dependência de múltiplos gols de uma equipe diante de um ferrolho.
+
 ## 🛡️ FAS SAFE --- APPROVED
 
   \#   Jogo   Mercado     FAS DQ   Proteção   Risco   Leitura
@@ -393,15 +401,38 @@ sem odds; altere snapshot após resultado; mude metodologia por um MISS.
 6.  🛡️➕ SAFE+
 7.  🚀 PRA CIMA (ATTACK)
 8.  👴 APOSENTAR O NETO — scanner completo
-9.  🧠 Derived Signals
-10. 🔗 Correlation Engine
-11. 🇧🇷 FAS Rodada — Brasileirão integral
-12. ❌ Descartados
-13. 📊 Mapa Final
-14. 📸 Snapshot
-15. 📦 FAS3_EXPORT
+9.  🎫 MÚLTIPLAS / BILHETES DO DIA (SAFE, SAFE+, ATTACK, APOSENTAR O NETO)
+10. ⏰ PROTOCOLO LEMBRETE T-60MIN (Confirmação Pré-Jogo)
+11. 🧠 Derived Signals
+12. 🔗 Correlation Engine
+13. 🇧🇷 FAS Rodada — Brasileirão integral
+14. ❌ Descartados
+15. 📊 Mapa Final
+16. 📸 Snapshot
+17. 📦 FAS3_EXPORT
 
 Não reduza a resposta a picks.
+
+# 26A. 🎫 MÚLTIPLAS / BILHETES DO DIA (REGRAS DE MONTAGEM)
+
+Para transformar as seleções individuais em bilhetes executáveis:
+1. **Bilhete SAFE:** Combina as principais SAFEs do dia (máximo sugerido: 3 a 4 seleções com correlação baixa/independente para blindar contra multiplicação excessiva de variância).
+2. **Bilhete SAFE+:** Combina as seleções SAFE+ aprovadas.
+3. **Bilhete ATTACK (PRA CIMA):** Combina as melhores teses de valor/ataque (dupla ou tripla).
+4. **Bilhete APOSENTAR O NETO:** Alavancagem e cotação esticada baseada no scanner de assimetrias.
+
+# 26B. ⏰ PROTOCOLO DE LEMBRETE T-60MIN (CHECK-IN PRÉ-JOGO)
+
+Para qualquer bilhete/múltipla aprovada na rodada:
+1. **Gatilho de Horário:** Identifique o horário do **primeiro jogo** a entrar em campo em qualquer uma das múltiplas geradas.
+2. **Aviso T-60min:** O analista/sistema deve emitir explicitamente a recomendação de check-in **exatamente 1 hora antes (T-60 minutos)** do pontapé inicial.
+3. **Checklist de Validação T-60min:**
+   - 📋 *Lineup & Desfalques:* Confirmar escalações oficiais divulgadas 1h antes (ausência inesperada de goleiro titular, zaga ou artilheiro).
+   - 🌧️ *Condições Climáticas & Gramado:* Verificar alagamentos, temporais severos ou ventania atípica.
+   - ⚖️ *Decisão de Governança:*
+     - **MANTER:** Se todas as premissas pre-match estiverem íntegras.
+     - **ALTERAR:** Indicar substituição de seleção ou redução de linha caso surja ruído pontual.
+     - **CANCELAR / ABORTAR BILHETE:** Se houver desfalque crítico ou mudança drástica de game state (ex: time poupando 100% dos titulares).
 
 # 27. COMANDO PADRÃO
 
