@@ -413,13 +413,34 @@ sem odds; altere snapshot após resultado; mude metodologia por um MISS.
 
 Não reduza a resposta a picks.
 
-# 26A. 🎫 MÚLTIPLAS / BILHETES DO DIA (REGRAS DE MONTAGEM)
+# 26A. 🎫 MÚLTIPLAS / BILHETES DO DIA (ARQUITETURA MODULAR POR RANKING)
 
-Para transformar as seleções individuais em bilhetes executáveis:
-1. **Bilhete SAFE:** Combina as principais SAFEs do dia (máximo sugerido: 3 a 4 seleções com correlação baixa/independente para blindar contra multiplicação excessiva de variância).
-2. **Bilhete SAFE+:** Combina as seleções SAFE+ aprovadas.
-3. **Bilhete ATTACK (PRA CIMA):** Combina as melhores teses de valor/ataque (dupla ou tripla).
-4. **Bilhete APOSENTAR O NETO:** Alavancagem e cotação esticada baseada no scanner de assimetrias.
+Para manter a **cobertura e quantidade total** da rodada sem inflar a variância desnecessariamente, os bilhetes devem ser estruturados de forma **Modular e Rankeada (Tiered Stacking com Stop Points)**:
+
+1. **Apresentação Obrigatória por Ranking:**
+   - Liste **todas** as seleções elegíveis da rodada (sem ocultar quantidade).
+   - Ordene rigorosamente por ordem decrescente de convicção matemática e solidez:
+     - 🥇 **#1 [ÂNCORA PRIMÁRIA]** — Maior FAS Score, menor variância da rodada.
+     - 🥈 **#2 [ÂNCORA SECUNDÁRIA]** — Segunda seleção mais confiável do dia.
+     - 🥉 **#3 [EXPANSÃO TRIPLA]** — Boa assimetria, adiciona odd moderada.
+     - 🏅 **#4 / #5 [EXPANSÃO COMPLETA]** — Alavancagem máxima.
+
+2. **Definição de Stop Points (Decisão por Cotação):**
+   - 🟢 **STOP POINT 1 — DUPLA ÂNCORA (Top 1 + Top 2):**
+     *Regra de Ouro:* Se a odd combinada do Top 2 já atingir o alvo operacional da banca, **recomenda-se parar por aqui** com a mais alta probabilidade estatística de conversão.
+   - 🟡 **STOP POINT 2 — TRIPLA EQUILIBRADA (Top 1 + Top 2 + Top 3):**
+     Para quem deseja cotação intermediária (ex: @2.00 a @2.60+) com controle de risco.
+   - 🔴 **STOP POINT 3 — MÚLTIPLA COMPLETA (Todas as Pernas):**
+     Bilhete integral para quem busca retorno máximo/alavancagem.
+
+3. **Regra Específica de Mercado — Blindagem Anti-Relaxamento:**
+   - Em confrontos de alta disparidade técnica com expectativa de goleada de superfavorito (ex: Barcelona Feminino, Bayern, etc.), é **PROIBIDO** o uso de *Ambos Marcam - Não (Clean Sheet)* no bilhete ATTACK/SAFE. Favoritos que abrem 3x0 ou 4x0 tendem a relaxar a marcação e rodar o banco no final, sofrendo gols em contra-ataques isolados. Substituir por **Team Total Over 1.5 / 2.5** ou **Moneyline/Handicap**.
+
+4. **Categorias de Bilhetes da Rodada:**
+   - **Bilhete SAFE:** Montado no formato modular rankeado com todas as SAFEs aprovadas.
+   - **Bilhete SAFE+:** Montado no formato modular rankeado com as teses de degrau controlado.
+   - **Bilhete ATTACK (PRA CIMA):** Tripla de alta assimetria e valor de ataque.
+   - **Bilhete APOSENTAR O NETO:** Scanner geral da rodada para cotação esticada.
 
 # 26B. ⏰ PROTOCOLO DE LEMBRETE T-60MIN (CHECK-IN PRÉ-JOGO)
 

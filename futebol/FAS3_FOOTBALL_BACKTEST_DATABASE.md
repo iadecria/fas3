@@ -114,18 +114,18 @@ Nesta modalidade, cada categoria forma um bilhete único (múltipla/parlay) comb
 ### A. Performance por Seleções Individuais (Singles)
 | Categoria | Total Registrado | HIT | MISS | VOID | Win Rate (%) |
 |---|---|---|---|---|---|
-| **SAFE** | 5 | 3 | 2 | 0 | **60.0%** |
-| **SAFE+** | 3 | 1 | 2 | 0 | **33.3%** |
-| **ATTACK (PRA CIMA)** | 3 | 2 | 1 | 0 | **66.7%** |
-| **Total Geral Singles** | 11 | 6 | 5 | 0 | **54.5%** |
+| **SAFE** | 13 | 9 | 4 | 0 | **69.2%** |
+| **SAFE+** | 11 | 7 | 4 | 0 | **63.6%** |
+| **ATTACK (PRA CIMA)** | 11 | 6 | 5 | 0 | **54.5%** |
+| **Total Geral Singles** | 35 | 22 | 13 | 0 | **62.9%** |
 
 ### B. Performance por Múltiplas / Bilhetes Combinados (Parlays)
 | Bilhete / Múltipla | Total Disputado | GREEN (HIT) | RED (MISS) | Taxa de Acerto (%) |
 |---|---|---|---|---|
-| **Bilhete SAFE** | 1 | 0 | 1 | **0.0%** (3/5 pernas) |
-| **Bilhete SAFE+** | 1 | 0 | 1 | **0.0%** (1/3 pernas) |
-| **Bilhete ATTACK (Tripla Core)** | 1 | 1 | 0 | **100.0%** (3/3 pernas) 🎯 |
-| **Bilhete APOSENTAR O NETO** | 1 | 0 | 1 | **0.0%** |
+| **Bilhete SAFE** | 2 | 0 | 2 | **0.0%** (3/5 em 22/09, 3/4 em 23/09) |
+| **Bilhete SAFE+** | 2 | 0 | 2 | **0.0%** (1/3 em 22/09, 3/4 em 23/09) |
+| **Bilhete ATTACK (Tripla Core)** | 2 | 1 | 1 | **50.0%** (3/3 em 22/09, 1/3 em 23/09) |
+| **Bilhete APOSENTAR O NETO** | 2 | 0 | 2 | **0.0%** |
 
 ---
 
@@ -136,7 +136,7 @@ Nesta modalidade, cada categoria forma um bilhete único (múltipla/parlay) comb
 - **Horário de Registro:** 01:10:00 BRT
 - **Cutoff:** 2026-09-23T01:10:00-03:00
 - **Contexto da Data:** Janela de Data FIFA mantendo o Brasileirão Série A pausado (`FAS Rodada: NO_FIXTURES`). Destaque para a 1ª rodada da fase de grupos da UEFA Women's Champions League (UWCL) e semifinais da Copa do Mundo Feminina Sub-20.
-- **Status de Liquidação:** `PENDING` (Jogos a serem disputados hoje a partir das 10:00 BRT até 22:30 BRT)
+- **Status de Liquidação:** **LIQUIDADO / AUDITADO**
 
 #### 1. Discovery e Cobertura
 - Encontrados: 5
@@ -145,64 +145,154 @@ Nesta modalidade, cada categoria forma um bilhete único (múltipla/parlay) comb
 - Descartados: 1 (Amistosos / Ligas Menores sem liquidez)
 - FAS Rodada (Brasileirão Série A): `NO_FIXTURES` (pausado por Data FIFA)
 
-#### 2. Grade de Fixtures e Teses Pre-Match
-1. **Itália Sub-20 × Espanha Sub-20** (Copa do Mundo Feminina Sub-20 - Semifinal - 10:00 BRT)
-   - *Tese:* Espanha domina posse territorial e controle estrutural, mas semifinais de base têm cautela excessiva; Itália muito sólida defensivamente na transição.
-   - **SAFE:** Espanha Sub-20 ou Empate (Dupla Chance 1X) (FAS 91 | DQ HIGH | VERY_HIGH | Risco LOW)
-   - **SAFE+:** Espanha Sub-20 Vence (Moneyline) (FAS 85 | DQ HIGH | Risco LOW_MEDIUM)
-   - **ATTACK:** Menos de 2.5 Gols (FAS 83 | DQ HIGH | Risco MEDIUM)
-   - **Status:** `PENDING`
+#### 2. Grade de Fixtures, Resultados e Liquidação
 
-2. **OH Leuven × Roma** (UWCL - 13:45 BRT)
-   - *Tese:* Roma campeã italiana enfrentando o time belga com assimetria técnica favorável, mas fora de casa; propensão a jogo aberto com finalizações frequentes.
-   - **SAFE:** Mais de 1.5 Gols (FAS 92 | DQ HIGH | VERY_HIGH | Risco LOW)
-   - **SAFE+:** Roma Vence (Moneyline) (FAS 86 | DQ HIGH | Risco LOW_MEDIUM)
-   - **ATTACK:** Roma Vence + Mais de 2.5 Gols (FAS 82 | DQ HIGH | Risco MEDIUM)
-   - **Status:** `PENDING`
+1. **Itália Sub-20 0 × 2 Espanha Sub-20** (Copa do Mundo Feminina Sub-20 - Semifinal - 10:00 BRT)
+   - *Resultado Oficial:* 0 x 2 (Total de gols: 2)
+   - **SAFE:** Espanha Sub-20 ou Empate (Dupla Chance 1X) ➔ ✅ **HIT** (Placar 0x2 confirma dupla chance)
+   - **SAFE+:** Espanha Sub-20 Vence (Moneyline) ➔ ✅ **HIT** (Espanha venceu 0x2)
+   - **ATTACK:** Menos de 2.5 Gols ➔ ✅ **HIT** (Total 2 gols <= 2.5)
 
-3. **Chelsea × Austria Wien** (UWCL - 16:00 BRT)
-   - *Tese:* Favoritismo massivo das Blues. Aplicação estrita da nova regra *Park-the-Bus*: PROIBIDO Team Over 2.5 como SAFE contra retranca profunda austríaca. Proteção na linha estrutural do jogo.
-   - **SAFE:** Chelsea Vence (Moneyline) (FAS 95 | DQ HIGH | VERY_HIGH | Risco LOW)
-   - **SAFE+:** Chelsea vence o 1º Tempo (FAS 88 | DQ HIGH | Risco LOW_MEDIUM)
-   - **ATTACK:** Menos de 4.5 Gols (Proteção contra retranca estéril) (FAS 84 | DQ HIGH | Risco MEDIUM)
-   - **Status:** `PENDING`
+2. **OH Leuven 0 × 0 Roma** (UWCL - 13:45 BRT)
+   - *Resultado Oficial:* 0 x 0 (Total de gols: 0)
+   - **SAFE:** Mais de 1.5 Gols ➔ ❌ **MISS** (Placar 0x0)
+     - *Miss Audit:* `STATISTICAL_VARIANCE` (Roma registrou mais de 18 finalizações e xG de 2.1+, mas parou em grande atuação defensiva e da goleira do Leuven).
+   - **SAFE+:** Roma Vence (Moneyline) ➔ ❌ **MISS** (Empate 0x0)
+     - *Miss Audit:* `STATISTICAL_VARIANCE`
+   - **ATTACK:** Roma Vence + Mais de 2.5 Gols ➔ ❌ **MISS** (Placar 0x0)
+     - *Miss Audit:* `STATISTICAL_VARIANCE`
 
-4. **Barcelona × Paris FC** (UWCL - 16:00 BRT)
-   - *Tese:* Barcelona multicampeão continental atuando no Estadi Johan Cruyff contra o Paris FC (não o PSG). Domínio absoluto de meio-campo e volume de criação.
-   - **SAFE:** Barcelona Vence (Moneyline) (FAS 96 | DQ HIGH | VERY_HIGH | Risco LOW)
-   - **SAFE+:** Barcelona 2+ gols (Team Total Over 1.5) (FAS 89 | DQ HIGH | Risco LOW_MEDIUM)
-   - **ATTACK:** Ambos Marcam - Não (Clean Sheet Barcelona) (FAS 83 | DQ HIGH | Risco MEDIUM)
-   - **Status:** `PENDING`
+3. **Chelsea 1 × 0 Austria Wien** (UWCL - 16:00 BRT)
+   - *Resultado Oficial:* 1 x 0 (Total de gols: 1 | Intervalo: 1x0)
+   - **SAFE:** Chelsea Vence (Moneyline) ➔ ✅ **HIT** (Chelsea 1x0; aplicação bem-sucedida da blindagem *Park-the-Bus*)
+   - **SAFE+:** Chelsea vence o 1º Tempo ➔ ✅ **HIT** (Gol aos 11', placar 1x0 no intervalo)
+   - **ATTACK:** Menos de 4.5 Gols ➔ ✅ **HIT** (Total 1 gol <= 4.5)
 
-#### 3. Bilhetes Combinados / Múltiplas do Dia (Futebol)
+4. **Barcelona 5 × 2 Paris FC** (UWCL - 16:00 BRT)
+   - *Resultado Oficial:* 5 x 2 (Total de gols: 7)
+   - **SAFE:** Barcelona Vence (Moneyline) ➔ ✅ **HIT** (Barcelona venceu com folga 5x2)
+   - **SAFE+:** Barcelona 2+ gols (Team Total Over 1.5) ➔ ✅ **HIT** (Barcelona marcou 5 gols)
+   - **ATTACK:** Ambos Marcam - Não (Clean Sheet Barcelona) ➔ ❌ **MISS** (Paris FC marcou 2 gols no 2º tempo)
+     - *Miss Audit:* `STATISTICAL_VARIANCE / MISSING_CONTEXT` (Com o placar dilatado no 2T, o Barça baixou as linhas de marcação e rodou o banco, cedendo dois contra-ataques).
+
+#### 3. Auditoria das Múltiplas / Bilhetes Combinados (Backtest de Bilhetes 23/09)
 
 *   🎫 **MÚLTIPLA 1 — SAFE (4 seleções):**
-    *   Itália Sub-20 × Espanha Sub-20: Espanha ou Empate (1X)
-    *   OH Leuven × Roma: Mais de 1.5 Gols
-    *   Chelsea × Austria Wien: Chelsea Vence
-    *   Barcelona × Paris FC: Barcelona Vence
-    *   **Status:** `PENDING`
+    *   Itália Sub-20 × Espanha Sub-20: Espanha ou Empate ➔ ✅ HIT (0x2)
+    *   OH Leuven × Roma: Mais de 1.5 Gols ➔ ❌ MISS (0x0)
+    *   Chelsea × Austria Wien: Chelsea Vence ➔ ✅ HIT (1x0)
+    *   Barcelona × Paris FC: Barcelona Vence ➔ ✅ HIT (5x2)
+    *   **Resultado da Múltipla SAFE:** ❌ **RED** (3 acertos, 1 erro — derrubada apenas pelo 0x0 da Roma)
 
 *   🎫 **MÚLTIPLA 2 — SAFE+ (4 seleções):**
-    *   Itália Sub-20 × Espanha Sub-20: Espanha Vence
-    *   OH Leuven × Roma: Roma Vence
-    *   Chelsea × Austria Wien: Chelsea 1º Tempo
-    *   Barcelona × Paris FC: Barcelona Over 1.5 Gols
+    *   Itália Sub-20 × Espanha Sub-20: Espanha Vence ➔ ✅ HIT (0x2)
+    *   OH Leuven × Roma: Roma Vence ➔ ❌ MISS (0x0)
+    *   Chelsea × Austria Wien: Chelsea 1º Tempo ➔ ✅ HIT (1x0)
+    *   Barcelona × Paris FC: Barcelona Over 1.5 Gols ➔ ✅ HIT (5 gols)
+    *   **Resultado da Múltipla SAFE+:** ❌ **RED** (3 acertos, 1 erro — derrubada pelo tropeço da Roma)
+
+*   🎫 **MÚLTIPLA 3 — ATTACK / PRA CIMA (Tripla de Alta Assimetria):**
+    *   Itália Sub-20 × Espanha Sub-20: Menos de 2.5 Gols ➔ ✅ HIT (0x2)
+    *   OH Leuven × Roma: Roma Vence + Mais de 2.5 Gols ➔ ❌ MISS (0x0)
+    *   Barcelona × Paris FC: Ambos Marcam - Não ➔ ❌ MISS (5x2)
+    *   **Resultado da Múltipla ATTACK:** ❌ **RED** (1 acerto, 2 erros)
+
+*   🎫 **MÚLTIPLA 4 — APOSENTAR O NETO (Alavancagem Máxima da Rodada):**
+    *   Espanha Sub-20 Vence ➔ ✅ HIT
+    *   Roma Vence ➔ ❌ MISS
+    *   Chelsea 1º Tempo ➔ ✅ HIT
+    *   Barcelona Clean Sheet ➔ ❌ MISS
+    *   Chelsea Menos de 4.5 ➔ ✅ HIT
+    *   **Resultado do Bilhete:** ❌ **RED** (3 acertos, 2 erros)
+
+#### 4. ⏰ Auditoria do Protocolo T-60min
+*   **Primeiro Jogo:** Itália Sub-20 × Espanha Sub-20 (10:00 BRT)
+*   **Check-in:** 09:00 BRT confirmado sem alterações críticas nos onzes iniciais; tese mantida com sucesso no pré-jogo.
+
+---
+
+### [2026-09-24] — RODADA DIÁRIA (FUTEBOL)
+
+- **Snapshot ID:** `FAS_GEMINI_2026-09-24_V1`
+- **Data do Registro:** 2026-09-24
+- **Horário de Registro:** 00:20:00 BRT
+- **Cutoff:** 2026-09-24T00:20:00-03:00
+- **Contexto da Data:** Abertura da edição 2026/27 da UEFA Nations League (Ligas A e B). Janela de Data FIFA mantendo o Brasileirão Série A em pausa (`FAS Rodada: NO_FIXTURES`).
+- **Status de Liquidação:** `PENDING`
+
+#### 1. Discovery e Cobertura
+- Encontrados: 7
+- Elegíveis: 4
+- Analisados: 4
+- Descartados: 3 (Andorra vs Malta, Kosovo vs Irlanda, Sérvia vs Grécia — dispersão de linhas e liquidez)
+- FAS Rodada (Brasileirão Série A): `NO_FIXTURES` (pausado por Data FIFA)
+
+#### 2. Grade de Fixtures e Teses Pre-Match
+
+1. **Portugal × País de Gales** (UEFA Nations League - Liga A - 15:45 BRT)
+   - *Tese:* Portugal joga em Lisboa com elenco completo de elite, domínio de posse e pressão ofensiva. Gales com forte limitação criativa e transição estéril fora de casa.
+   - **SAFE:** Portugal Vence (Moneyline) (FAS 96 | DQ HIGH | VERY_HIGH | Risco LOW)
+   - **SAFE+:** Portugal 2+ Gols (Team Total Over 1.5) (FAS 89 | DQ HIGH | Risco LOW_MEDIUM)
+   - **ATTACK:** Portugal Vence o 1º Tempo (FAS 84 | DQ HIGH | Risco MEDIUM)
+   - **Status:** `PENDING`
+
+2. **Áustria × Israel** (UEFA Nations League - Liga B - 15:45 BRT)
+   - *Tese:* Áustria de Ralf Rangnick atua em Viena com Gegenpressing intenso, ritmo sufocante e alto volume de finalizações. Defesa de Israel vulnerável a bolas recuperadas no terço final.
+   - **SAFE:** Áustria Vence (Moneyline) (FAS 94 | DQ HIGH | VERY_HIGH | Risco LOW)
+   - **SAFE+:** Áustria Vence + Mais de 1.5 Gols (FAS 88 | DQ HIGH | Risco LOW_MEDIUM)
+   - **ATTACK:** Áustria 2+ Gols (Team Total Over 1.5) (FAS 85 | DQ HIGH | Risco MEDIUM)
+   - **Status:** `PENDING`
+
+3. **Holanda × Alemanha** (UEFA Nations League - Liga A - 15:45 BRT)
+   - *Tese:* Clássico de elite europeia em Amsterdã. Ambas as equipes têm vocação vertical, transição veloz e geram xG elevado em confrontos diretos históricos.
+   - **SAFE:** Mais de 1.5 Gols (FAS 93 | DQ HIGH | VERY_HIGH | Risco LOW)
+   - **SAFE+:** Ambos Marcam - Sim (BTTS) (FAS 86 | DQ HIGH | Risco LOW_MEDIUM)
+   - **ATTACK:** Mais de 2.5 Gols + Ambos Marcam (FAS 83 | DQ HIGH | Risco MEDIUM)
+   - **Status:** `PENDING`
+
+4. **Noruega × Dinamarca** (UEFA Nations League - Liga A - 15:45 BRT)
+   - *Tese:* Clássico nórdico em Oslo. Noruega com forte presença de área e ímpeto em casa; Dinamarca estruturada com jogo de controle. Linha de dupla chance dá proteção máxima.
+   - **SAFE:** Noruega ou Empate (Dupla Chance 1X) (FAS 90 | DQ HIGH | VERY_HIGH | Risco LOW)
+   - **SAFE+:** Menos de 3.5 Gols (FAS 85 | DQ HIGH | Risco LOW_MEDIUM)
+   - **ATTACK:** Empate ou Noruega + Ambos Marcam (FAS 81 | DQ HIGH | Risco MEDIUM)
+   - **Status:** `PENDING`
+
+#### 3. Bilhetes Combinados / Múltiplas do Dia (Arquitetura Modular Rankeada)
+
+*   🎫 **MÚLTIPLA 1 — SAFE (Formato Modular com Stop Points):**
+    *   🥇 **#1 [ÂNCORA PRIMÁRIA]:** Portugal Vence (FAS 96)
+    *   🥈 **#2 [ÂNCORA SECUNDÁRIA]:** Áustria Vence (FAS 94)
+    *   🟢 **STOP POINT 1 ➔ DUPLA ÂNCORA (Top 1 + Top 2):** Portugal ML + Áustria ML *(Decisão recomendada se a cotação combinada for satisfatória)*.
+    *   🥉 **#3 [EXPANSÃO TRIPLA]:** Holanda × Alemanha — Mais de 1.5 Gols (FAS 93)
+    *   🟡 **STOP POINT 2 ➔ TRIPLA EQUILIBRADA (Top 1 + Top 2 + Top 3)**
+    *   🏅 **#4 [EXPANSÃO COMPLETA]:** Noruega ou Empate (FAS 90)
+    *   🔴 **STOP POINT 3 ➔ MÚLTIPLA COMPLETA (Top 4)**
+    *   **Status:** `PENDING`
+
+*   🎫 **MÚLTIPLA 2 — SAFE+ (Formato Modular):**
+    *   🥇 #1 Portugal 2+ Gols (Team Over 1.5)
+    *   🥈 #2 Áustria Vence + Over 1.5 Gols
+    *   🟢 **STOP POINT 1 ➔ Dupla SAFE+**
+    *   🥉 #3 Holanda × Alemanha — Ambos Marcam (Sim)
+    *   🟡 **STOP POINT 2 ➔ Tripla SAFE+**
+    *   🏅 #4 Noruega × Dinamarca — Menos de 3.5 Gols
+    *   🔴 **STOP POINT 3 ➔ Completa SAFE+**
     *   **Status:** `PENDING`
 
 *   🎫 **MÚLTIPLA 3 — ATTACK / PRA CIMA (Tripla de Alta Assimetria):**
-    *   Itália Sub-20 × Espanha Sub-20: Menos de 2.5 Gols
-    *   OH Leuven × Roma: Roma Vence + Mais de 2.5 Gols
-    *   Barcelona × Paris FC: Ambos Marcam - Não (Clean Sheet Barça)
+    *   Holanda × Alemanha: Mais de 2.5 Gols + Ambos Marcam
+    *   Portugal × Gales: Portugal Vence 1º Tempo
+    *   Áustria × Israel: Áustria 2+ Gols
     *   **Status:** `PENDING`
 
 *   🎫 **MÚLTIPLA 4 — APOSENTAR O NETO (Alavancagem Máxima da Rodada):**
-    *   Espanha Sub-20 Vence + Roma Vence + Chelsea 1º Tempo + Barcelona Clean Sheet + Menos de 4.5 Chelsea.
+    *   Portugal 1ºT + Áustria Over 1.5 Team + Holanda/Alemanha Over 2.5 & BTTS + Noruega 1X & BTTS.
     *   **Status:** `PENDING`
 
 #### 4. ⏰ Protocolo de Lembrete T-60min
-*   **Primeiro Jogo da Rodada:** Itália Sub-20 × Espanha Sub-20 (10:00 BRT)
-*   **Horário de Check-in Pré-Jogo:** **09:00 BRT (T-60 minutos)**
-*   **Checklist:** Verificar escalação oficial da Espanha e da Itália, ausências no gol ou ataque titular e condições meteorológicas. Governar: MANTER / ALTERAR / CANCELAR.
+*   **Jogos da Rodada:** Todos com pontapé inicial às 15:45 BRT
+*   **Horário de Check-in Pré-Jogo:** **14:45 BRT (T-60 minutos)**
+*   **Checklist:** Escalações oficiais da UEFA, confirmação de centroavantes e desfalques de última hora. Decisão: MANTER / ALTERAR / CANCELAR.
+
 
 

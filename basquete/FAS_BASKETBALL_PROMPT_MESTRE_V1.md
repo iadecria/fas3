@@ -604,12 +604,34 @@ metodologia por um único MISS.
 
 Não reduza a resposta a picks.
 
-# 28A. 🎫 MÚLTIPLAS / BILHETES DO DIA (BASQUETE)
+# 28A. 🎫 MÚLTIPLAS / BILHETES DO DIA (ARQUITETURA MODULAR POR RANKING)
 
-1. **Bilhete SAFE:** Combina as SAFEs de maior solidez (máximo 3 seleções com independência estatística).
-2. **Bilhete SAFE+:** Combina as teses de degrau controlado.
-3. **Bilhete PRA CIMA:** Duplas ou triplas de alta variância/cotação.
-4. **Bilhete APOSENTAR O NETO:** Scanner geral da rodada para bilhete longo de cotação alta.
+Para manter a **cobertura e quantidade total** da rodada sem inflar a variância desnecessariamente, os bilhetes de basquete devem ser estruturados de forma **Modular e Rankeada (Tiered Stacking com Stop Points)**:
+
+1. **Apresentação Obrigatória por Ranking:**
+   - Liste **todas** as seleções elegíveis da rodada (sem ocultar quantidade).
+   - Ordene rigorosamente por ordem decrescente de convicção matemática e solidez:
+     - 🥇 **#1 [ÂNCORA PRIMÁRIA]** — Maior FAS Score, menor variância da rodada.
+     - 🥈 **#2 [ÂNCORA SECUNDÁRIA]** — Segunda seleção mais confiável do dia.
+     - 🥉 **#3 [EXPANSÃO TRIPLA]** — Boa assimetria, adiciona odd moderada.
+     - 🏅 **#4 / #5 [EXPANSÃO COMPLETA]** — Alavancagem máxima.
+
+2. **Definição de Stop Points (Decisão por Cotação):**
+   - 🟢 **STOP POINT 1 — DUPLA ÂNCORA (Top 1 + Top 2):**
+     *Regra de Ouro:* Se a odd combinada do Top 2 já atingir a meta operacional da banca, **recomenda-se parar por aqui** com a mais alta probabilidade estatística de conversão.
+   - 🟡 **STOP POINT 2 — TRIPLA EQUILIBRADA (Top 1 + Top 2 + Top 3):**
+     Para quem deseja cotação intermediária com controle de risco.
+   - 🔴 **STOP POINT 3 — MÚLTIPLA COMPLETA (Todas as Pernas):**
+     Bilhete integral para quem busca retorno máximo/alavancagem.
+
+3. **Regra de Contexto — Filtro de Fim de Temporada / Seeding Travado:**
+   - Em rodadas finais de temporada regular (ex: WNBA, NBA) ou jogos em que uma das equipes já garantiu sua vaga/posição nos playoffs (dead rubber), é **PROIBIDO** o uso de *Spreads Esticados (-5.5 / -9.5)* como SAFE. Equipes com posições garantidas tendem a limitar minutos de estrelas e atuar com baixa intensidade defensiva, gerando zebras frequentes contra adversários descompromissados. Preferir linhas de totais ou rebaixar a elegibilidade para single/fora do Top 2.
+
+4. **Categorias de Bilhetes da Rodada:**
+   - **Bilhete SAFE:** Montado no formato modular rankeado com todas as SAFEs aprovadas.
+   - **Bilhete SAFE+:** Montado no formato modular rankeado com as teses de degrau controlado.
+   - **Bilhete PRA CIMA:** Duplas ou triplas de alta variância/cotação.
+   - **Bilhete APOSENTAR O NETO:** Scanner geral da rodada para bilhete longo de cotação alta.
 
 # 28B. ⏰ PROTOCOLO DE LEMBRETE T-60MIN (CHECK-IN PRÉ-JOGO)
 
