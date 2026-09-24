@@ -243,7 +243,29 @@ Este arquivo preserva snapshots imutáveis, decisões pré-jogo, liquidações p
    - **PRA CIMA:** Indiana Fever +5.5 Spread + Mais de 168.5 Pontos (FAS 82 | DQ HIGH | Risco MEDIUM)
    - **Status:** `PENDING`
 
-#### 3. Bilhetes Combinados / Múltiplas do Dia (Arquitetura Modular Rankeada)
+#### 3. 👴 APOSENTAR O NETO — Principais Linhas (Scanner Completo)
+
+**Boca Juniors vs NBA G League United**
+🔥🔥🔥 G League United Vence (ML) — 95
+🔥🔥 G League United -7.5 Spread — 88
+🔥 G League United Team Total Over 89.5 — 84
+🔥 Mais de 168.5 Pontos — 82
+🟢 Boca Juniors Under 82.5 — 79
+
+**Golden State Valkyries @ Los Angeles Sparks**
+🔥🔥🔥 Valkyries Vence (ML) — 93
+🔥🔥 Valkyries -4.5 Spread — 86
+🔥 Sparks Team Total Under 78.5 — 81
+🟢 Menos de 164.5 Pontos — 78
+
+**Indiana Fever @ Minnesota Lynx**
+🔥🔥🔥 Mais de 166.5 Pontos — 91
+🔥🔥 Minnesota Lynx Vence (ML) — 85
+🔥 Indiana Fever +5.5 Spread — 83
+🔥 Mais de 168.5 Pontos — 82
+🟢 Indiana Fever Team Total Over 81.5 — 78
+
+#### 4. Bilhetes Combinados / Múltiplas do Dia (Arquitetura Modular Rankeada)
 
 *   🎟️ **MÚLTIPLA 1 — SAFE (Formato Modular com Stop Points):**
     *   🥇 **#1 [ÂNCORA PRIMÁRIA]:** Boca vs G League: G League United Vence (ML) (FAS 95)

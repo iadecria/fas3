@@ -257,7 +257,39 @@ Nesta modalidade, cada categoria forma um bilhete único (múltipla/parlay) comb
    - **ATTACK:** Empate ou Noruega + Ambos Marcam (FAS 81 | DQ HIGH | Risco MEDIUM)
    - **Status:** `PENDING`
 
-#### 3. Bilhetes Combinados / Múltiplas do Dia (Arquitetura Modular Rankeada)
+#### 3. 👴 APOSENTAR O NETO — Principais Linhas (Scanner Completo)
+
+**Portugal × País de Gales**
+🔥🔥🔥 Portugal Vence — 96
+🔥🔥 Portugal 1X (Dupla Chance) — 98
+🔥🔥 Portugal 2+ Gols (Team Over 1.5) — 89
+🔥 Portugal Vence 1º Tempo — 84
+🔥 Menos de 3.5 Gols — 82
+🟢 Gales Menos de 1.5 Gols — 88
+
+**Áustria × Israel**
+🔥🔥🔥 Áustria Vence — 94
+🔥🔥 Áustria Vence + Mais de 1.5 Gols — 88
+🔥🔥 Áustria 2+ Gols (Team Over 1.5) — 85
+🔥 Mais de 2.5 Gols — 83
+🟢 Ambos Marcam - Sim — 78
+
+**Holanda × Alemanha**
+🔥🔥🔥 Mais de 1.5 Gols — 93
+🔥🔥 Ambos Marcam - Sim — 86
+🔥 Mais de 2.5 Gols — 84
+🔥 Mais de 2.5 Gols + Ambos Marcam — 83
+🟢 Menos de 4.5 Gols — 78
+🟢 Holanda ou Alemanha (12) — 79
+
+**Noruega × Dinamarca**
+🔥🔥🔥 Noruega ou Empate (1X) — 90
+🔥🔥 Menos de 3.5 Gols — 85
+🔥 Mais de 1.5 Gols — 82
+🔥 Empate ou Noruega + Ambos Marcam — 81
+🟢 Menos de 2.5 Gols — 76
+
+#### 4. Bilhetes Combinados / Múltiplas do Dia (Arquitetura Modular Rankeada)
 
 *   🎫 **MÚLTIPLA 1 — SAFE (Formato Modular com Stop Points):**
     *   🥇 **#1 [ÂNCORA PRIMÁRIA]:** Portugal Vence (FAS 96)
