@@ -362,13 +362,13 @@ Este arquivo preserva snapshots imutáveis, decisões pré-jogo, liquidações p
 
 #### 4. Bilhetes Combinados / Múltiplas do Dia (Arquitetura Modular Rankeada V2.0)
 
-*   🎟️ **MÚLTIPLA 1 — SAFE (Formato Modular com Stop Points):**
-    *   🥇 **#1 [ÂNCORA PRIMÁRIA]:** Fenerbahçe Vence (Moneyline) (FAS 97) (Odd Pinnacle: @1.15)
-    *   🥈 **#2 [ÂNCORA SECUNDÁRIA]:** Partizan NIS +4.5 Spread Positivo (FAS 93) (Odd Pinnacle: ~@1.40)
-    *   🟢 **STOP POINT 1 ➔ DUPLA ÂNCORA (Top 1 + Top 2):** Fenerbahçe ML + Partizan +4.5 *(Odd combinada: ~@1.61 | Menor risco do basquete)*.
-    *   🥉 **#3 [EXPANSÃO TRIPLA]:** Valencia Basket +5.5 Spread Positivo (FAS 91) (Odd Pinnacle: ~@1.45)
-    *   🟡 **STOP POINT 2 ➔ TRIPLA EQUILIBRADA (Top 1 + Top 2 + Top 3):** *(Odd combinada: ~@2.33)*
-    *   **Status:** `PENDING`
+*   🎟️ **MÚLTIPLA 1 — SAFE (Formato Modular com Stop Points) [BOLETIM OFICIAL REGISTRADO]:**
+    *   🥇 **#1 [ÂNCORA PRIMÁRIA]:** Fenerbahçe Vence (Moneyline) (FAS 97) ➔ **Odd Real: @1.10**
+    *   🥈 **#2 [ÂNCORA SECUNDÁRIA]:** Partizan NIS +4.5 Spread Positivo (FAS 93) ➔ **Odd Real: @1.28**
+    *   🟢 **STOP POINT 1 ➔ DUPLA ÂNCORA (Top 1 + Top 2):** Fenerbahçe ML + Partizan +4.5 *(Odd combinada: **@1.41** | Dupla de Máxima Blindagem)*.
+    *   🥉 **#3 [EXPANSÃO TRIPLA]:** Valencia Basket +5.5 Spread Positivo (FAS 91) ➔ **Odd Real: @1.50**
+    *   🟡 **STOP POINT 2 ➔ TRIPLA EQUILIBRADA (Top 1 + Top 2 + Top 3):** *(Odd combinada real: **@2.12**)*
+    *   **Status:** `PENDING (AGUARDANDO LIQUIDAÇÃO AMANHÃ)`
 
 *   🎟️ **MÚLTIPLA 2 — SAFE+ (Formato Modular):**
     *   🥇 #1 Fenerbahçe Vence 1º Tempo
