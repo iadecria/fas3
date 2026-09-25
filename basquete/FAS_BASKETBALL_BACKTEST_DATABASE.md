@@ -297,3 +297,95 @@ Este arquivo preserva snapshots imutáveis, decisões pré-jogo, liquidações p
 *   **Primeiro Jogo WNBA:** Valkyries @ Sparks (20:00 BRT) ➔ Lembrete às **19:00 BRT**
 *   **Checklist:** Injury reports oficiais e confirmação de minutos dos titulares.
 
+---
+
+### [2026-09-25] — RODADA DIÁRIA (BASQUETE V2.0 BLINDADO)
+
+- **Snapshot ID:** `FAS_BASKETBALL_GEMINI_2026-09-25_V1`
+- **Data do Registro:** 2026-09-25
+- **Horário de Registro:** 00:52:00 BRT
+- **Cutoff:** 2026-09-25T13:00:00-03:00
+- **Contexto da Data:** Abertura da temporada 2026/27 da EuroLeague Basketball (Rodada 1). Dia de descanso na FIBA Intercontinental Cup e entressafra de playoffs da WNBA.
+- **Protocolo de Blindagem Ativo:** **SAFE Quality Gates V2.0** (Veto a Spreads Negativos em SAFE, Veto a Linhas Cheias de Over, Foco em Moneyline de Favorito e Handicap Positivo Protegido).
+- **Status de Liquidação:** `PENDING`
+
+#### 1. Discovery e Cobertura
+- Encontrados: 4
+- Elegíveis: 3
+- Analisados: 3 (Fenerbahçe x Virtus Bologna, Partizan x Olimpia Milano, Beşiktaş x Valencia Basket)
+- Descartados: 1 (Brisbane Bullets x Illawarra Hawks na NBL — jogo das 06:30 BRT matutino de alta volatilidade)
+
+#### 2. Grade de Fixtures e Teses Pre-Match (V2.0)
+
+1. **Fenerbahçe SK vs Virtus Segafredo Bologna** (EuroLeague - Rodada 1 - 14:45 BRT)
+   - *Tese:* Fenerbahçe atua na Ülker Sports Arena em Istambul com um elenco estelar (Will Clyburn, Shane Larkin e Sertaç Şanlı). Virtus Bologna com 9 novos atletas e 7 estreantes na EuroLeague. Aplicação da Regra V2.0: proibido spread negativo arriscado (-7.5) na SAFE. Foco na vitória seca absoluta.
+   - **SAFE:** Fenerbahçe Vence (Moneyline) (FAS 97 | DQ HIGH | VERY_HIGH | Risco LOW)
+   - **SAFE+:** Fenerbahçe Vence o 1º Tempo (1H ML) (FAS 91 | DQ HIGH | Risco LOW_MEDIUM)
+   - **PRA CIMA:** Fenerbahçe -7.5 Spread (FAS 84 | DQ HIGH | Risco MEDIUM)
+   - **Status:** `PENDING`
+
+2. **KK Partizan NIS vs Olimpia Milano** (EuroLeague - Rodada 1 - 15:45 BRT)
+   - *Tese:* Caldeirão da Stark Arena em Belgrado com a torcida mais fervorosa da Europa. O Partizan impõe um jogo físico e intensidade de contato brutal que Milano historicamente sofre para conter em estreias fora de casa.
+   - **SAFE:** Partizan NIS +4.5 Spread Positivo Protegido (FAS 93 | DQ HIGH | VERY_HIGH | Risco LOW)
+   - **SAFE+:** Partizan NIS Vence (Moneyline) (FAS 87 | DQ HIGH | Risco LOW_MEDIUM)
+   - **PRA CIMA:** Partizan NIS Vence o 1º Tempo (FAS 82 | DQ HIGH | Risco MEDIUM)
+   - **Status:** `PENDING`
+
+3. **Beşiktaş J.K. vs Valencia Basket** (EuroLeague - Rodada 1 - 14:00 BRT)
+   - *Tese:* Beşiktaş retorna à EuroLeague diante do experiente Valencia Basket da Liga ACB. Jogo inaugural tenso e de ajuste de elenco. Linha de handicap positivo protege o time espanhol contra oscilações de placar.
+   - **SAFE:** Valencia Basket +5.5 Spread Positivo Protegido (FAS 91 | DQ HIGH | VERY_HIGH | Risco LOW)
+   - **SAFE+:** Valencia Basket Vence (Moneyline) (FAS 84 | DQ HIGH | Risco LOW_MEDIUM)
+   - **PRA CIMA:** Menos de 162.5 Pontos (Under de Estreia) (FAS 80 | DQ HIGH | Risco MEDIUM)
+   - **Status:** `PENDING`
+
+#### 3. 👴 APOSENTAR O NETO — Principais Linhas (Scanner Completo)
+
+**Fenerbahçe vs Virtus Bologna**
+- 🔥🔥🔥 Fenerbahçe Vence (ML) — 97
+- 🔥🔥 Fenerbahçe Vence 1º Tempo — 91
+- 🔥 Fenerbahçe -7.5 Spread — 84
+- 🟢 Mais de 158.5 Pontos — 80
+- 🟢 Virtus Bologna Under 76.5 — 82
+
+**KK Partizan vs Olimpia Milano**
+- 🔥🔥🔥 Partizan +4.5 Spread — 93
+- 🔥🔥 Partizan Vence (ML) — 87
+- 🔥 Partizan Vence 1º Tempo — 82
+- 🟢 Menos de 164.5 Pontos — 79
+- 🟢 Milano Under 80.5 — 81
+
+**Beşiktaş vs Valencia Basket**
+- 🔥🔥🔥 Valencia Basket +5.5 Spread — 91
+- 🔥🔥 Valencia Basket Vence (ML) — 84
+- 🔥 Menos de 162.5 Pontos — 80
+- 🟢 Beşiktaş Under 81.5 — 78
+
+#### 4. Bilhetes Combinados / Múltiplas do Dia (Arquitetura Modular Rankeada V2.0)
+
+*   🎟️ **MÚLTIPLA 1 — SAFE (Formato Modular com Stop Points):**
+    *   🥇 **#1 [ÂNCORA PRIMÁRIA]:** Fenerbahçe Vence (Moneyline) (FAS 97) (Odd Pinnacle: @1.15)
+    *   🥈 **#2 [ÂNCORA SECUNDÁRIA]:** Partizan NIS +4.5 Spread Positivo (FAS 93) (Odd Pinnacle: ~@1.40)
+    *   🟢 **STOP POINT 1 ➔ DUPLA ÂNCORA (Top 1 + Top 2):** Fenerbahçe ML + Partizan +4.5 *(Odd combinada: ~@1.61 | Menor risco do basquete)*.
+    *   🥉 **#3 [EXPANSÃO TRIPLA]:** Valencia Basket +5.5 Spread Positivo (FAS 91) (Odd Pinnacle: ~@1.45)
+    *   🟡 **STOP POINT 2 ➔ TRIPLA EQUILIBRADA (Top 1 + Top 2 + Top 3):** *(Odd combinada: ~@2.33)*
+    *   **Status:** `PENDING`
+
+*   🎟️ **MÚLTIPLA 2 — SAFE+ (Formato Modular):**
+    *   🥇 #1 Fenerbahçe Vence 1º Tempo
+    *   🥈 #2 Partizan NIS Vence (Moneyline)
+    *   🟢 **STOP POINT 1 ➔ Dupla SAFE+**
+    *   🥉 #3 Valencia Basket Vence (Moneyline)
+    *   🟡 **STOP POINT 2 ➔ Tripla SAFE+**
+    *   **Status:** `PENDING`
+
+*   🎟️ **MÚLTIPLA 3 — PRA CIMA (Tripla de Alta Assimetria):**
+    *   Fenerbahçe -7.5 Spread + Partizan 1ºT ML + Beşiktaş/Valencia Under 162.5.
+    *   **Status:** `PENDING`
+
+#### 5. ⏰ Protocolo de Lembrete T-60min
+*   **Primeiro Jogo (EuroLeague):** 14:00 BRT (Beşiktaş x Valencia) ➔ Lembrete às **13:00 BRT**
+*   **Segundo Jogo:** 14:45 BRT (Fenerbahçe x Bologna) ➔ Lembrete às **13:45 BRT**
+*   **Terceiro Jogo:** 15:45 BRT (Partizan x Milano) ➔ Lembrete às **14:45 BRT**
+*   **Checklist:** Injury reports oficiais da EuroLeague Basketball.
+
+

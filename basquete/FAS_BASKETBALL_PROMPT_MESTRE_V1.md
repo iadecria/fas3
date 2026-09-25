@@ -297,12 +297,26 @@ Máximo recomendado: **uma tese SAFE principal por fixture**.
 
 SAFE = 0 é resultado válido.
 
-### 🛡️ Trava de Volatilidade de Elenco (Lineup Volatility Protocol)
-- **Filtro de Desfalques de Última Hora em Totais Altos:**
-  - Linhas de **Over Alto (> 175-180 pontos na WNBA ou > 225 na NBA)** só podem receber selo SAFE se **100% dos principais criadores ofensivos e pontuadores primários (Usage Rate > 22%)** estiverem com status ativamente confirmado.
-  - Caso haja jogador-chave em *Questionable*, *Doubtful* ou risco de ser poupado (*Game-Time Decision*), a linha de Over é **automaticamente rebaixada** para PRA CIMA (ATTACK) ou descartada. A ausência de um cestinha destrói a produção coletiva esperada.
-- **Data Quality Gate:**
-  - É proibido conceder SAFE com `DQ MEDIUM` ou `DQ LOW` em partidas de ligas secundárias ou torneios curtos internacionais (TIER_C).
+### 🛡️ SAFE Quality Gates do Basquete (Blindagem V2.0)
+
+1. **Anti-Spread Gate (Proibição de Handicap Negativo no SAFE):**
+   - É **EXPRESSAMENTE PROIBIDO** conceder selo SAFE para linhas de Handicap Negativo (-3.5, -4.5, -5.5, -8.5, etc.).
+   - Se a tese é a superioridade técnica/favoritismo de uma equipe, a SAFE mandatória deve ser **Moneyline (Vence seco)** ou **1º Tempo Vencedor (1H ML)**.
+   - O basquete moderno é altamente vulnerável a *Garbage Time* (reservas cedendo corridas no final) e *Free Throw Game* no último minuto. Spreads negativos pertencem exclusivamente à camada **PRA CIMA (ATTACK)** ou excepcionalmente SAFE+ curto.
+
+2. **Cushion Rule para Totais de Pontos (Margem de Segurança Obrigatória):**
+   - É **PROIBIDO** utilizar a linha cheia/padrão de Over da casa como SAFE.
+   - Totais de jogo completo (Over/Under) só podem ser SAFE se contarem com uma margem de segurança de no mínimo 6 a 8 pontos de folga (Alternate Total) em relação à linha comercial principal, ou se focarem no 1º Tempo.
+
+3. **Privilégio de 1º Tempo (1H Dominance):**
+   - No 1º tempo as rotações são controladas, a intensidade defensiva dos titulares é máxima e não há efeito de relaxamento de placar. Linhas de 1º Tempo (Moneyline ou Spread curto) são tratadas com prioridade na SAFE.
+
+4. **Filtro de Desmobilização (Motivation & Seeding Gate):**
+   - Partidas de reta final onde uma equipe já garantiu vaga de playoff ou atua desmobilizada não podem receber apostas de favoritismo elástico.
+
+5. **Trava de Volatilidade de Elenco (Lineup Volatility Protocol):**
+   - Linhas de Over Alto (> 175-180 pontos na WNBA ou > 225 na NBA) só podem receber selo SAFE se 100% dos principais pontuadores estiverem confirmados.
+   - É proibido conceder SAFE com `DQ MEDIUM` ou `DQ LOW` em partidas de ligas secundárias ou torneios curtos internacionais (TIER_C).
 
 # 12. SAFE+ --- UM DEGRAU ACIMA
 

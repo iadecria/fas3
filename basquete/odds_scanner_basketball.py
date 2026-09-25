@@ -47,3 +47,23 @@ if __name__ == "__main__":
     print(f"Ligas de Basquete Ativas: {len(active_b)}")
     for s in active_b:
         print(f"- {s.get('key')}: {s.get('title')}")
+        
+    print("\n\n================ EUROLEAGUE ODDS ================")
+    try:
+        el_odds = get_basketball_odds("basketball_euroleague", regions="eu,uk")
+        print(f"Jogos encontrados na Euroleague: {len(el_odds)}")
+        for g in el_odds:
+            home = g.get("home_team")
+            away = g.get("away_team")
+            t_str = g.get("commence_time")
+            print(f"\n🏀 {home} x {away} ({t_str})")
+            for b in g.get("bookmakers", []):
+                if b.get("title") in ["Pinnacle", "Betfair", "1xBet", "Betsson", "William Hill"]:
+                    markets = {m.get("key"): m for m in b.get("markets", [])}
+                    h2h = markets.get("h2h", {}).get("outcomes", [])
+                    h_price = next((o.get("price") for o in h2h if o.get("name") == home), None)
+                    a_price = next((o.get("price") for o in h2h if o.get("name") == away), None)
+                    print(f"   🏦 {b.get('title'):<12} | Casa ({home}): @{h_price} | Fora ({away}): @{a_price}")
+    except Exception as e:
+        print(f"Erro ao buscar EuroLeague: {e}")
+
