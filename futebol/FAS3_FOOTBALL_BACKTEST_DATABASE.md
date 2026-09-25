@@ -114,18 +114,18 @@ Nesta modalidade, cada categoria forma um bilhete único (múltipla/parlay) comb
 ### A. Performance por Seleções Individuais (Singles)
 | Categoria | Total Registrado | HIT | MISS | VOID | Win Rate (%) |
 |---|---|---|---|---|---|
-| **SAFE** | 13 | 9 | 4 | 0 | **69.2%** |
-| **SAFE+** | 11 | 7 | 4 | 0 | **63.6%** |
-| **ATTACK (PRA CIMA)** | 11 | 6 | 5 | 0 | **54.5%** |
-| **Total Geral Singles** | 35 | 22 | 13 | 0 | **62.9%** |
+| **SAFE** | 17 | 13 | 4 | 0 | **76.5%** |
+| **SAFE+** | 15 | 9 | 6 | 0 | **60.0%** |
+| **ATTACK (PRA CIMA)** | 15 | 9 | 6 | 0 | **60.0%** |
+| **Total Geral Singles** | 47 | 31 | 16 | 0 | **66.0%** |
 
 ### B. Performance por Múltiplas / Bilhetes Combinados (Parlays)
 | Bilhete / Múltipla | Total Disputado | GREEN (HIT) | RED (MISS) | Taxa de Acerto (%) |
 |---|---|---|---|---|
-| **Bilhete SAFE** | 2 | 0 | 2 | **0.0%** (3/5 em 22/09, 3/4 em 23/09) |
-| **Bilhete SAFE+** | 2 | 0 | 2 | **0.0%** (1/3 em 22/09, 3/4 em 23/09) |
-| **Bilhete ATTACK (Tripla Core)** | 2 | 1 | 1 | **50.0%** (3/3 em 22/09, 1/3 em 23/09) |
-| **Bilhete APOSENTAR O NETO** | 2 | 0 | 2 | **0.0%** |
+| **Bilhete SAFE** | 3 | 1 | 2 | **33.3%** (3/5 em 22/09, 3/4 em 23/09, **4/4 GREEN em 24/09**) |
+| **Bilhete SAFE+** | 3 | 0 | 3 | **0.0%** (1/3 em 22/09, 3/4 em 23/09, 2/4 em 24/09) |
+| **Bilhete ATTACK (Tripla Core)** | 3 | 1 | 2 | **33.3%** (3/3 em 22/09, 1/3 em 23/09, 2/3 em 24/09) |
+| **Bilhete APOSENTAR O NETO** | 3 | 0 | 3 | **0.0%** |
 
 ---
 
@@ -218,7 +218,7 @@ Nesta modalidade, cada categoria forma um bilhete único (múltipla/parlay) comb
 - **Horário de Registro:** 00:20:00 BRT
 - **Cutoff:** 2026-09-24T00:20:00-03:00
 - **Contexto da Data:** Abertura da edição 2026/27 da UEFA Nations League (Ligas A e B). Janela de Data FIFA mantendo o Brasileirão Série A em pausa (`FAS Rodada: NO_FIXTURES`).
-- **Status de Liquidação:** `PENDING`
+- **Status de Liquidação:** **LIQUIDADO / AUDITADO**
 
 #### 1. Discovery e Cobertura
 - Encontrados: 7
@@ -227,104 +227,103 @@ Nesta modalidade, cada categoria forma um bilhete único (múltipla/parlay) comb
 - Descartados: 3 (Andorra vs Malta, Kosovo vs Irlanda, Sérvia vs Grécia — dispersão de linhas e liquidez)
 - FAS Rodada (Brasileirão Série A): `NO_FIXTURES` (pausado por Data FIFA)
 
-#### 2. Grade de Fixtures e Teses Pre-Match
+#### 2. Grade de Fixtures, Resultados e Liquidação
 
-1. **Portugal × País de Gales** (UEFA Nations League - Liga A - 15:45 BRT)
-   - *Tese:* Portugal joga em Lisboa com elenco completo de elite, domínio de posse e pressão ofensiva. Gales com forte limitação criativa e transição estéril fora de casa.
-   - **SAFE:** Portugal Vence (Moneyline) (FAS 96 | DQ HIGH | VERY_HIGH | Risco LOW)
-   - **SAFE+:** Portugal 2+ Gols (Team Total Over 1.5) (FAS 89 | DQ HIGH | Risco LOW_MEDIUM)
-   - **ATTACK:** Portugal Vence o 1º Tempo (FAS 84 | DQ HIGH | Risco MEDIUM)
-   - **Status:** `PENDING`
+1. **Portugal 1 × 0 País de Gales** (UEFA Nations League - Liga A - 15:45 BRT)
+   - *Resultado Oficial:* 1 x 0 (Total de gols: 1 | Intervalo: 1x0 - Gol de João Félix aos 22' 1T)
+   - **SAFE:** Portugal Vence (Moneyline) ➔ ✅ **HIT** (Portugal venceu por 1x0)
+   - **SAFE+:** Portugal 2+ Gols (Team Total Over 1.5) ➔ ❌ **MISS** (Portugal marcou 1 gol; gol de CR7 anulado pelo VAR)
+     - *Miss Audit:* `STATISTICAL_VARIANCE` (Domínio luso amplo de posse e chances, mas o gol de CR7 anulado pelo VAR e falta de pontaria no 2T mantiveram o 1x0).
+   - **ATTACK:** Portugal Vence o 1º Tempo ➔ ✅ **HIT** (Placar de 1x0 no intervalo com gol aos 22')
 
-2. **Áustria × Israel** (UEFA Nations League - Liga B - 15:45 BRT)
-   - *Tese:* Áustria de Ralf Rangnick atua em Viena com Gegenpressing intenso, ritmo sufocante e alto volume de finalizações. Defesa de Israel vulnerável a bolas recuperadas no terço final.
-   - **SAFE:** Áustria Vence (Moneyline) (FAS 94 | DQ HIGH | VERY_HIGH | Risco LOW)
-   - **SAFE+:** Áustria Vence + Mais de 1.5 Gols (FAS 88 | DQ HIGH | Risco LOW_MEDIUM)
-   - **ATTACK:** Áustria 2+ Gols (Team Total Over 1.5) (FAS 85 | DQ HIGH | Risco MEDIUM)
-   - **Status:** `PENDING`
+2. **Áustria 3 × 1 Israel** (UEFA Nations League - Liga B - 15:45 BRT)
+   - *Resultado Oficial:* 3 x 1 (Total de gols: 4 | Intervalo: 1x0 Schmid aos 35' 1T; Abu Farchi empatou aos 61' 2T; Mwene aos 90' e Kalajdžić aos 90+3')
+   - **SAFE:** Áustria Vence (Moneyline) ➔ ✅ **HIT** (Áustria venceu por 3x1)
+   - **SAFE+:** Áustria Vence + Mais de 1.5 Gols ➔ ✅ **HIT** (Áustria 3x1, total de 4 gols)
+   - **ATTACK:** Áustria 2+ Gols (Team Total Over 1.5) ➔ ✅ **HIT** (Áustria anotou 3 gols)
 
-3. **Holanda × Alemanha** (UEFA Nations League - Liga A - 15:45 BRT)
-   - *Tese:* Clássico de elite europeia em Amsterdã. Ambas as equipes têm vocação vertical, transição veloz e geram xG elevado em confrontos diretos históricos.
-   - **SAFE:** Mais de 1.5 Gols (FAS 93 | DQ HIGH | VERY_HIGH | Risco LOW)
-   - **SAFE+:** Ambos Marcam - Sim (BTTS) (FAS 86 | DQ HIGH | Risco LOW_MEDIUM)
-   - **ATTACK:** Mais de 2.5 Gols + Ambos Marcam (FAS 83 | DQ HIGH | Risco MEDIUM)
-   - **Status:** `PENDING`
+3. **Holanda 1 × 1 Alemanha** (UEFA Nations League - Liga A - 15:45 BRT)
+   - *Resultado Oficial:* 1 x 1 (Total de gols: 2 | Nmecha aos 32' 1T, Gakpo aos 90+2')
+   - **SAFE:** Mais de 1.5 Gols ➔ ✅ **HIT** (Total 2 gols >= 1.5)
+   - **SAFE+:** Ambos Marcam - Sim (BTTS) ➔ ✅ **HIT** (Holanda 1, Alemanha 1)
+   - **ATTACK:** Mais de 2.5 Gols + Ambos Marcam ➔ ❌ **MISS** (Total de 2 gols, faltou 1 gol para o Over 2.5)
+     - *Miss Audit:* `STATISTICAL_VARIANCE` (Gakpo empatou nos acréscimos garantindo o BTTS e o Over 1.5, mas o tempo expirou antes do terceiro gol).
 
-4. **Noruega × Dinamarca** (UEFA Nations League - Liga A - 15:45 BRT)
-   - *Tese:* Clássico nórdico em Oslo. Noruega com forte presença de área e ímpeto em casa; Dinamarca estruturada com jogo de controle. Linha de dupla chance dá proteção máxima.
-   - **SAFE:** Noruega ou Empate (Dupla Chance 1X) (FAS 90 | DQ HIGH | VERY_HIGH | Risco LOW)
-   - **SAFE+:** Menos de 3.5 Gols (FAS 85 | DQ HIGH | Risco LOW_MEDIUM)
-   - **ATTACK:** Empate ou Noruega + Ambos Marcam (FAS 81 | DQ HIGH | Risco MEDIUM)
-   - **Status:** `PENDING`
+4. **Noruega 3 × 2 Dinamarca** (UEFA Nations League - Liga A - 15:45 BRT)
+   - *Resultado Oficial:* 3 x 2 (Total de gols: 5 | Haaland 2 gols)
+   - **SAFE:** Noruega ou Empate (Dupla Chance 1X) ➔ ✅ **HIT** (Noruega venceu por 3x2)
+   - **SAFE+:** Menos de 3.5 Gols ➔ ❌ **MISS** (Total 5 gols > 3.5)
+     - *Miss Audit:* `STATISTICAL_VARIANCE` (Clássico nórdico eletrizante com doblete de Haaland quebrou a linha under e virou confronto de 5 gols).
+   - **ATTACK:** Empate ou Noruega + Ambos Marcam ➔ ✅ **HIT** (Noruega venceu e ambas marcaram)
 
 #### 3. 👴 APOSENTAR O NETO — Principais Linhas (Scanner Completo)
 
 **Portugal × País de Gales**
-🔥🔥🔥 Portugal Vence — 96
-🔥🔥 Portugal 1X (Dupla Chance) — 98
-🔥🔥 Portugal 2+ Gols (Team Over 1.5) — 89
-🔥 Portugal Vence 1º Tempo — 84
-🔥 Menos de 3.5 Gols — 82
-🟢 Gales Menos de 1.5 Gols — 88
+- 🔥🔥🔥 Portugal Vence — 96 ➔ ✅ HIT
+- 🔥🔥 Portugal 1X (Dupla Chance) — 98 ➔ ✅ HIT
+- 🔥🔥 Portugal 2+ Gols (Team Over 1.5) — 89 ➔ ❌ MISS
+- 🔥 Portugal Vence 1º Tempo — 84 ➔ ✅ HIT
+- 🔥 Menos de 3.5 Gols — 82 ➔ ✅ HIT
+- 🟢 Gales Menos de 1.5 Gols — 88 ➔ ✅ HIT
 
 **Áustria × Israel**
-🔥🔥🔥 Áustria Vence — 94
-🔥🔥 Áustria Vence + Mais de 1.5 Gols — 88
-🔥🔥 Áustria 2+ Gols (Team Over 1.5) — 85
-🔥 Mais de 2.5 Gols — 83
-🟢 Ambos Marcam - Sim — 78
+- 🔥🔥🔥 Áustria Vence — 94 ➔ ✅ HIT
+- 🔥🔥 Áustria Vence + Mais de 1.5 Gols — 88 ➔ ✅ HIT
+- 🔥🔥 Áustria 2+ Gols (Team Over 1.5) — 85 ➔ ✅ HIT
+- 🔥 Mais de 2.5 Gols — 83 ➔ ✅ HIT
+- 🟢 Ambos Marcam - Sim — 78 ➔ ✅ HIT
 
 **Holanda × Alemanha**
-🔥🔥🔥 Mais de 1.5 Gols — 93
-🔥🔥 Ambos Marcam - Sim — 86
-🔥 Mais de 2.5 Gols — 84
-🔥 Mais de 2.5 Gols + Ambos Marcam — 83
-🟢 Menos de 4.5 Gols — 78
-🟢 Holanda ou Alemanha (12) — 79
+- 🔥🔥🔥 Mais de 1.5 Gols — 93 ➔ ✅ HIT
+- 🔥🔥 Ambos Marcam - Sim — 86 ➔ ✅ HIT
+- 🔥 Mais de 2.5 Gols — 84 ➔ ❌ MISS
+- 🔥 Mais de 2.5 Gols + Ambos Marcam — 83 ➔ ❌ MISS
+- 🟢 Menos de 4.5 Gols — 78 ➔ ✅ HIT
+- 🟢 Holanda ou Alemanha (12) — 79 ➔ ❌ MISS
 
 **Noruega × Dinamarca**
-🔥🔥🔥 Noruega ou Empate (1X) — 90
-🔥🔥 Menos de 3.5 Gols — 85
-🔥 Mais de 1.5 Gols — 82
-🔥 Empate ou Noruega + Ambos Marcam — 81
-🟢 Menos de 2.5 Gols — 76
+- 🔥🔥🔥 Noruega ou Empate (1X) — 90 ➔ ✅ HIT
+- 🔥🔥 Menos de 3.5 Gols — 85 ➔ ❌ MISS
+- 🔥 Mais de 1.5 Gols — 82 ➔ ✅ HIT
+- 🔥 Empate ou Noruega + Ambos Marcam — 81 ➔ ✅ HIT
+- 🟢 Menos de 2.5 Gols — 76 ➔ ❌ MISS
 
-#### 4. Bilhetes Combinados / Múltiplas do Dia (Arquitetura Modular Rankeada)
+#### 4. Auditoria das Múltiplas / Bilhetes Combinados (Backtest 24/09)
 
 *   🎫 **MÚLTIPLA 1 — SAFE (Formato Modular com Stop Points):**
-    *   🥇 **#1 [ÂNCORA PRIMÁRIA]:** Portugal Vence (FAS 96)
-    *   🥈 **#2 [ÂNCORA SECUNDÁRIA]:** Áustria Vence (FAS 94)
-    *   🟢 **STOP POINT 1 ➔ DUPLA ÂNCORA (Top 1 + Top 2):** Portugal ML + Áustria ML *(Decisão recomendada se a cotação combinada for satisfatória)*.
-    *   🥉 **#3 [EXPANSÃO TRIPLA]:** Holanda × Alemanha — Mais de 1.5 Gols (FAS 93)
-    *   🟡 **STOP POINT 2 ➔ TRIPLA EQUILIBRADA (Top 1 + Top 2 + Top 3)**
-    *   🏅 **#4 [EXPANSÃO COMPLETA]:** Noruega ou Empate (FAS 90)
-    *   🔴 **STOP POINT 3 ➔ MÚLTIPLA COMPLETA (Top 4)**
-    *   **Status:** `PENDING`
+    *   🥇 **#1 [ÂNCORA PRIMÁRIA]:** Portugal Vence ➔ ✅ **HIT** (1x0)
+    *   🥈 **#2 [ÂNCORA SECUNDÁRIA]:** Áustria Vence ➔ ✅ **HIT** (3x1)
+    *   🟢 **STOP POINT 1 ➔ DUPLA ÂNCORA (Top 1 + Top 2):** ✅ **GREEN / HIT (2/2)** 🎯
+    *   🥉 **#3 [EXPANSÃO TRIPLA]:** Holanda × Alemanha — Mais de 1.5 Gols ➔ ✅ **HIT** (1x1)
+    *   🟡 **STOP POINT 2 ➔ TRIPLA EQUILIBRADA (Top 1 + Top 2 + Top 3):** ✅ **GREEN / HIT (3/3)** 🎯
+    *   🏅 **#4 [EXPANSÃO COMPLETA]:** Noruega ou Empate (1X) ➔ ✅ **HIT** (3x2)
+    *   🔴 **STOP POINT 3 ➔ MÚLTIPLA COMPLETA (Top 4):** ✅ **GREEN / HIT (4/4)** 🎯🎯🎯
+    *   **Resultado da Múltipla SAFE:** ✅ **GREEN TOTAL (100% de acerto em todos os stop points)**
 
 *   🎫 **MÚLTIPLA 2 — SAFE+ (Formato Modular):**
-    *   🥇 #1 Portugal 2+ Gols (Team Over 1.5)
-    *   🥈 #2 Áustria Vence + Over 1.5 Gols
-    *   🟢 **STOP POINT 1 ➔ Dupla SAFE+**
-    *   🥉 #3 Holanda × Alemanha — Ambos Marcam (Sim)
-    *   🟡 **STOP POINT 2 ➔ Tripla SAFE+**
-    *   🏅 #4 Noruega × Dinamarca — Menos de 3.5 Gols
-    *   🔴 **STOP POINT 3 ➔ Completa SAFE+**
-    *   **Status:** `PENDING`
+    *   🥇 #1 Portugal 2+ Gols ➔ ❌ MISS (1x0)
+    *   🥈 #2 Áustria Vence + Over 1.5 Gols ➔ ✅ HIT (3x1)
+    *   🟢 **STOP POINT 1 ➔ Dupla SAFE+:** ❌ RED (1 acerto, 1 erro)
+    *   🥉 #3 Holanda × Alemanha — Ambos Marcam (Sim) ➔ ✅ HIT (1x1)
+    *   🟡 **STOP POINT 2 ➔ Tripla SAFE+:** ❌ RED (2 acertos, 1 erro)
+    *   🏅 #4 Noruega × Dinamarca — Menos de 3.5 Gols ➔ ❌ MISS (3x2)
+    *   🔴 **STOP POINT 3 ➔ Completa SAFE+:** ❌ RED (2 acertos, 2 erros)
+    *   **Resultado da Múltipla SAFE+:** ❌ **RED**
 
 *   🎫 **MÚLTIPLA 3 — ATTACK / PRA CIMA (Tripla de Alta Assimetria):**
-    *   Holanda × Alemanha: Mais de 2.5 Gols + Ambos Marcam
-    *   Portugal × Gales: Portugal Vence 1º Tempo
-    *   Áustria × Israel: Áustria 2+ Gols
-    *   **Status:** `PENDING`
+    *   Holanda × Alemanha: Mais de 2.5 Gols + Ambos Marcam ➔ ❌ MISS (1x1)
+    *   Portugal × Gales: Portugal Vence 1º Tempo ➔ ✅ HIT (1x0 no 1T)
+    *   Áustria × Israel: Áustria 2+ Gols ➔ ✅ HIT (3 gols)
+    *   **Resultado da Múltipla ATTACK:** ❌ **RED** (2 acertos, 1 erro — derrubada apenas por 1 gol na Holanda)
 
 *   🎫 **MÚLTIPLA 4 — APOSENTAR O NETO (Alavancagem Máxima da Rodada):**
-    *   Portugal 1ºT + Áustria Over 1.5 Team + Holanda/Alemanha Over 2.5 & BTTS + Noruega 1X & BTTS.
-    *   **Status:** `PENDING`
+    *   Portugal 1ºT (✅) + Áustria Over 1.5 Team (✅) + Holanda Over 2.5 & BTTS (❌) + Noruega 1X & BTTS (✅).
+    *   **Resultado do Bilhete:** ❌ **RED** (3 acertos, 1 erro)
 
-#### 4. ⏰ Protocolo de Lembrete T-60min
-*   **Jogos da Rodada:** Todos com pontapé inicial às 15:45 BRT
-*   **Horário de Check-in Pré-Jogo:** **14:45 BRT (T-60 minutos)**
-*   **Checklist:** Escalações oficiais da UEFA, confirmação de centroavantes e desfalques de última hora. Decisão: MANTER / ALTERAR / CANCELAR.
+#### 5. ⏰ Auditoria do Protocolo T-60min
+*   **Jogos da Rodada:** 15:45 BRT
+*   **Check-in Realizado:** 14:45 BRT
+*   **Auditoria de Escalações:** Escalações confirmadas de acordo com as teses pré-jogo (CR7 e Félix por Portugal; Rangnick com pressão alta na Áustria; Haaland titular na Noruega). Linhas mantidas sem distorções de desfalque.
 
 
 
