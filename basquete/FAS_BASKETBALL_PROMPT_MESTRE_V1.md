@@ -457,6 +457,28 @@ Situação: - `SAFE` - `SAFE_PLUS_ONLY` - `ATTACK_ONLY` - `SCANNER_ONLY` -
 
 Inclua toda a grade elegível.
 
+# 21A. 🎫 MÚLTIPLAS / BILHETES DO DIA (ARQUITETURA MODULAR NO BASQUETE)
+
+Estrutura idêntica ao FAS Football para preservar a assertividade com Stop Points:
+
+1. **Apresentação por Ranking de Convicção:**
+   - 🥇 #1 [Âncora Primária] — Maior FAS Score, menor variância da rodada.
+   - 🥈 #2 [Âncora Secundária] — Segunda seleção mais sólida.
+   - 🥉 #3 [Expansão Tripla] — Valor e cotação intermediária.
+   - 🏅 #4 / #5 [Expansão Completa] — Alavancagem máxima.
+
+2. **Stop Points Operacionais:**
+   - 🟢 **STOP POINT 1 — DUPLA ÂNCORA (Top 1 + Top 2):** Se a cotação combinada for satisfatória (ex: @1.60 a @2.00+), recomenda-se parar por aqui.
+   - 🟡 **STOP POINT 2 — TRIPLA EQUILIBRADA (Top 1 + Top 2 + Top 3)**
+   - 🔴 **STOP POINT 3 — MÚLTIPLA COMPLETA**
+
+# 21B. ⏰ PROTOCOLO DE LEMBRETE T-60MIN (CHECK-IN PRÉ-JOGO)
+- Disparar check-in 1 hora antes do primeiro jogo de basquete da rodada para conferir os Injury Reports oficiais (jogadores listados como Out/Questionable).
+
+# 21C. 🏦 PROTOCOLO PÓS-VALIDAÇÃO: INTEGRAÇÃO DE ODDS & BOLETIM PINNACLE
+- A consulta à The Odds API (odds_scanner_basketball.py) roda estritamente **após a validação do FAS**.
+- No basquete na Pinnacle, as linhas de Moneyline, Handicap de Pontos (Spread) e Totais de Pontos (Over/Under) são todas Linhas Principais e 100% elegíveis para criação de Acumuladas/Parlays.
+
 # 22. SNAPSHOT IMUTÁVEL
 
 Finalize toda execução com:

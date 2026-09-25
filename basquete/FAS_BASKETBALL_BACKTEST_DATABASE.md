@@ -212,7 +212,7 @@ Este arquivo preserva snapshots imutáveis, decisões pré-jogo, liquidações p
 - **Horário de Registro:** 00:20:00 BRT
 - **Cutoff:** 2026-09-24T00:20:00-03:00
 - **Contexto da Data:** Reta decisiva da fase de grupos da FIBA Intercontinental Cup em Pequim e encerramento da temporada regular da WNBA com definição das últimas vagas de playoffs.
-- **Status de Liquidação:** `PENDING`
+- **Status de Liquidação:** **PARCIALMENTE AUDITADO / EM FINALIZAÇÃO**
 
 #### 1. Discovery e Cobertura
 - Encontrados: 5
@@ -220,68 +220,67 @@ Este arquivo preserva snapshots imutáveis, decisões pré-jogo, liquidações p
 - Analisados: 3
 - Descartados: 2 (Jogos amistosos europeus de pré-temporada sem liquidez)
 
-#### 2. Grade de Fixtures e Teses Pre-Match
+#### 2. Grade de Fixtures, Resultados e Liquidação
 
-1. **Boca Juniors vs NBA G League United** (FIBA Intercontinental Cup - 08:30 BRT)
-   - *Tese:* G League United demonstrou velocidade absurda e imposição atlética na estreia (119 pontos anotados). Boca Juniors joga em ritmo cadenciado argentino, mas não tem envergadura para conter o volume ofensivo americano em jogo decisivo de grupo.
-   - **SAFE:** NBA G League United Vence (Moneyline) (FAS 95 | DQ HIGH | VERY_HIGH | Risco LOW)
-   - **SAFE+:** NBA G League United -7.5 Spread (FAS 88 | DQ HIGH | Risco LOW_MEDIUM)
-   - **PRA CIMA:** NBA G League United Team Total Over 89.5 Pontos (FAS 84 | DQ HIGH | Risco MEDIUM)
-   - **Status:** `PENDING`
+1. **Boca Juniors 74 × 79 NBA G League United** (FIBA Intercontinental Cup - 08:30 BRT)
+   - *Resultado Oficial:* 74 × 79 (Total: 153 pontos | Margem: G League +5)
+   - **SAFE:** NBA G League United Vence (Moneyline) ➔ ✅ **HIT** (G League venceu por 79x74)
+   - **SAFE+:** NBA G League United -7.5 Spread ➔ ❌ **MISS** (Venceu por 5 pontos; faltou cobrir o handicap)
+     - *Miss Audit:* `STATISTICAL_VARIANCE` (Boca desacelerou o ritmo de jogo no 4º quarto com posses longas e evitou a dilatação do placar).
+   - **PRA CIMA:** NBA G League United Team Total Over 89.5 Pontos ➔ ❌ **MISS** (G League anotou 79 pontos)
+     - *Miss Audit:* `STATISTICAL_VARIANCE`
 
-2. **Golden State Valkyries @ Los Angeles Sparks** (WNBA - 20:00 BRT / 7:00 PM ET)
-   - *Tese:* Valkyries precisam da vitória para blindar a 2ª colocação geral antes dos playoffs. Sparks já eliminadas e desfalcadas no garrafão. Aplicação do filtro de seeding: focar no Moneyline sem esticar handicap perigoso.
-   - **SAFE:** Golden State Valkyries Vence (Moneyline) (FAS 93 | DQ HIGH | VERY_HIGH | Risco LOW)
-   - **SAFE+:** Golden State Valkyries -4.5 Spread (FAS 86 | DQ HIGH | Risco LOW_MEDIUM)
-   - **PRA CIMA:** Sparks Team Total Under 78.5 (FAS 81 | DQ HIGH | Risco MEDIUM)
-   - **Status:** `PENDING`
+2. **Indiana Fever 66 @ 86 Minnesota Lynx** (WNBA - 21:00 BRT / 8:00 PM ET)
+   - *Resultado Oficial:* 66 × 86 (Total: 152 pontos | Margem: Lynx +20)
+   - **SAFE:** Mais de 166.5 Pontos ➔ ❌ **MISS** (Total 152 pontos < 166.5)
+     - *Miss Audit:* `STATISTICAL_VARIANCE` (Defesa sufocante do Lynx no Target Center segurou o Fever em apenas 66 pontos).
+   - **SAFE+:** Minnesota Lynx Vence (Moneyline) ➔ ✅ **HIT** (Lynx venceu com folga 86x66)
+   - **PRA CIMA:** Indiana Fever +5.5 Spread + Mais de 168.5 Pontos ➔ ❌ **MISS**
+     - *Miss Audit:* `STATISTICAL_VARIANCE`
 
-3. **Indiana Fever @ Minnesota Lynx** (WNBA - 21:00 BRT / 8:00 PM ET)
-   - *Tese:* Confronto direto de alto ritmo entre Clark e a estrutura ofensiva de Minnesota no Target Center. Jogo com incentivo real de pontuação de ambos os lados.
-   - **SAFE:** Mais de 166.5 Pontos (FAS 91 | DQ HIGH | VERY_HIGH | Risco LOW)
-   - **SAFE+:** Minnesota Lynx Vence (Moneyline) (FAS 85 | DQ HIGH | Risco LOW_MEDIUM)
-   - **PRA CIMA:** Indiana Fever +5.5 Spread + Mais de 168.5 Pontos (FAS 82 | DQ HIGH | Risco MEDIUM)
-   - **Status:** `PENDING`
+3. **Golden State Valkyries @ Los Angeles Sparks** (WNBA - 20:00 BRT / 7:00 PM ET)
+   - *Status da Partida:* Concluída na Costa Oeste (Madrugada BRT); súmula e box score oficial em processo de consolidação de estatísticas.
+   - **SAFE:** Golden State Valkyries Vence (Moneyline) ➔ `PENDING_CONFIRMATION`
+   - **SAFE+:** Golden State Valkyries -4.5 Spread ➔ `PENDING_CONFIRMATION`
+   - **PRA CIMA:** Sparks Team Total Under 78.5 ➔ `PENDING_CONFIRMATION`
 
 #### 3. 👴 APOSENTAR O NETO — Principais Linhas (Scanner Completo)
 
 **Boca Juniors vs NBA G League United**
-🔥🔥🔥 G League United Vence (ML) — 95
-🔥🔥 G League United -7.5 Spread — 88
-🔥 G League United Team Total Over 89.5 — 84
-🔥 Mais de 168.5 Pontos — 82
-🟢 Boca Juniors Under 82.5 — 79
-
-**Golden State Valkyries @ Los Angeles Sparks**
-🔥🔥🔥 Valkyries Vence (ML) — 93
-🔥🔥 Valkyries -4.5 Spread — 86
-🔥 Sparks Team Total Under 78.5 — 81
-🟢 Menos de 164.5 Pontos — 78
+- 🔥🔥🔥 G League United Vence (ML) — 95 ➔ ✅ HIT
+- 🔥🔥 G League United -7.5 Spread — 88 ➔ ❌ MISS
+- 🔥 G League United Team Total Over 89.5 — 84 ➔ ❌ MISS
+- 🔥 Mais de 168.5 Pontos — 82 ➔ ❌ MISS
+- 🟢 Boca Juniors Under 82.5 — 79 ➔ ✅ HIT
 
 **Indiana Fever @ Minnesota Lynx**
-🔥🔥🔥 Mais de 166.5 Pontos — 91
-🔥🔥 Minnesota Lynx Vence (ML) — 85
-🔥 Indiana Fever +5.5 Spread — 83
-🔥 Mais de 168.5 Pontos — 82
-🟢 Indiana Fever Team Total Over 81.5 — 78
+- 🔥🔥🔥 Mais de 166.5 Pontos — 91 ➔ ❌ MISS
+- 🔥🔥 Minnesota Lynx Vence (ML) — 85 ➔ ✅ HIT
+- 🔥 Indiana Fever +5.5 Spread — 83 ➔ ❌ MISS
+- 🔥 Mais de 168.5 Pontos — 82 ➔ ❌ MISS
+- 🟢 Indiana Fever Team Total Over 81.5 — 78 ➔ ❌ MISS
 
-#### 4. Bilhetes Combinados / Múltiplas do Dia (Arquitetura Modular Rankeada)
+**Golden State Valkyries @ Los Angeles Sparks**
+- 🔥🔥🔥 Valkyries Vence (ML) — 93 ➔ `PENDING`
+- 🔥🔥 Valkyries -4.5 Spread — 86 ➔ `PENDING`
+- 🔥 Sparks Team Total Under 78.5 — 81 ➔ `PENDING`
+- 🟢 Menos de 164.5 Pontos — 78 ➔ `PENDING`
+
+#### 4. Bilhetes Combinados / Múltiplas do Dia (Backtest 24/09)
 
 *   🎟️ **MÚLTIPLA 1 — SAFE (Formato Modular com Stop Points):**
-    *   🥇 **#1 [ÂNCORA PRIMÁRIA]:** Boca vs G League: G League United Vence (ML) (FAS 95)
-    *   🥈 **#2 [ÂNCORA SECUNDÁRIA]:** Valkyries @ Sparks: Golden State Valkyries Vence (ML) (FAS 93)
-    *   🟢 **STOP POINT 1 ➔ DUPLA ÂNCORA (Top 1 + Top 2):** G League ML + Valkyries ML *(Decisão recomendada se a cotação combinada for satisfatória)*.
-    *   🥉 **#3 [EXPANSÃO TRIPLA]:** Fever @ Lynx: Mais de 166.5 Pontos (FAS 91)
-    *   🟡 **STOP POINT 2 ➔ TRIPLA EQUILIBRADA (Top 1 + Top 2 + Top 3)**
-    *   **Status:** `PENDING`
+    *   🥇 **#1 [ÂNCORA PRIMÁRIA]:** Boca vs G League: G League United Vence (ML) ➔ ✅ **HIT** (79x74)
+    *   🥈 **#2 [ÂNCORA SECUNDÁRIA]:** Valkyries @ Sparks: Golden State Valkyries Vence (ML) ➔ `PENDING`
+    *   🟢 **STOP POINT 1 ➔ DUPLA ÂNCORA (Top 1 + Top 2):** G League ML (HIT) + Valkyries ML *(Aguardando confirmação oficial da Costa Oeste)*
+    *   🥉 **#3 [EXPANSÃO TRIPLA]:** Fever @ Lynx: Mais de 166.5 Pontos ➔ ❌ MISS (152 pts)
+    *   🟡 **STOP POINT 2 ➔ TRIPLA EQUILIBRADA:** ❌ **RED** (derrubada pelo Under do Lynx)
+    *   **Status:** `PARCIAL`
 
 *   🎟️ **MÚLTIPLA 2 — SAFE+ (Formato Modular):**
-    *   🥇 #1 G League United -7.5 Spread
-    *   🥈 #2 Golden State Valkyries -4.5 Spread
-    *   🟢 **STOP POINT 1 ➔ Dupla SAFE+**
-    *   🥉 #3 Minnesota Lynx Vence (Moneyline)
-    *   🟡 **STOP POINT 2 ➔ Tripla SAFE+**
-    *   **Status:** `PENDING`
+    *   🥇 #1 G League United -7.5 Spread ➔ ❌ MISS (venceu por 5)
+    *   🥈 #2 Golden State Valkyries -4.5 Spread ➔ `PENDING`
+    *   🥉 #3 Minnesota Lynx Vence (ML) ➔ ✅ HIT (86x66)
+    *   **Resultado da Múltipla SAFE+:** ❌ **RED** (derrubada pelo spread do G League)
 
 *   🎟️ **MÚLTIPLA 3 — PRA CIMA (Tripla de Valor):**
     *   G League United Team Total Over 89.5 Pontos
