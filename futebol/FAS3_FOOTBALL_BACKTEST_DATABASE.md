@@ -325,5 +325,138 @@ Nesta modalidade, cada categoria forma um bilhete único (múltipla/parlay) comb
 *   **Check-in Realizado:** 14:45 BRT
 *   **Auditoria de Escalações:** Escalações confirmadas de acordo com as teses pré-jogo (CR7 e Félix por Portugal; Rangnick com pressão alta na Áustria; Haaland titular na Noruega). Linhas mantidas sem distorções de desfalque.
 
+---
+
+### [2026-09-25] — RODADA DIÁRIA (FUTEBOL)
+
+- **Snapshot ID:** `FAS_GEMINI_2026-09-25_V1`
+- **Data do Registro:** 2026-09-25
+- **Horário de Registro:** 22:35:00 BRT
+- **Cutoff:** 2026-09-25T13:00:00-03:00
+- **Contexto da Data:** Sequência da 1ª rodada da UEFA Nations League (Ligas A e B), com as estreias de Zinedine Zidane na França e Roberto Mancini na Itália. Continuação da 30ª rodada do Brasileirão Série B.
+- **Status de Liquidação:** `PENDING`
+
+#### 1. Discovery e Cobertura
+- Encontrados: 8
+- Elegíveis: 5
+- Analisados: 5
+- Descartados: 3 (Novorizontino x São Bernardo — zaga desfalcada e truncamento; Armênia x Letônia e Montenegro x Chipre — liquidez reduzida e dispersão estatística)
+- FAS Rodada (Brasileirão Série A): `NO_FIXTURES` (pausado por Data FIFA)
+
+#### 2. Grade de Fixtures e Teses Pre-Match
+
+1. **Turquia × França** (UEFA Nations League - Liga A - 15:45 BRT)
+   - *Tese:* Estreia de gala de Zinedine Zidane no comando técnico da França com ataque estelar (Mbappé, Dembélé, Olise, Camavinga). Turquia joga com intensidade em İzmit com Güler e Aktürkoğlu, gerando jogo aberto e xG total muito elevado. Linha de Over 1.5 oferece proteção máxima de elite.
+   - **SAFE:** Mais de 1.5 Gols (FAS 96 | DQ HIGH | VERY_HIGH | Risco LOW)
+   - **SAFE+:** França Vence (Moneyline) (FAS 89 | DQ HIGH | Risco LOW_MEDIUM)
+   - **ATTACK:** França 2+ Gols (Team Total Over 1.5) (FAS 85 | DQ HIGH | Risco MEDIUM)
+   - **Status:** `PENDING`
+
+2. **Itália × Bélgica** (UEFA Nations League - Liga A - 15:45 BRT)
+   - *Tese:* Retorno de Roberto Mancini à Azzurra no Stadio Olimpico em Roma. Time estruturado com Donnarumma, Bastoni, Calafiori e Barella. Bélgica estreia Mark van Bommel com desfalques severos na defesa e ataque (sem Courtois, sem Trossard, sem Debast).
+   - **SAFE:** Itália ou Empate (Dupla Chance 1X) (FAS 95 | DQ HIGH | VERY_HIGH | Risco LOW)
+   - **SAFE+:** Itália Vence (Moneyline) (FAS 88 | DQ HIGH | Risco LOW_MEDIUM)
+   - **ATTACK:** Itália Vence + Menos de 3.5 Gols (FAS 84 | DQ HIGH | Risco MEDIUM)
+   - **Status:** `PENDING`
+
+3. **Suécia × Romênia** (UEFA Nations League - Liga B - 15:45 BRT)
+   - *Tese:* Suécia atua na Strawberry Arena em Solna com o setor ofensivo mais quente da Europa (Gyökeres e Isak municiados por Lucas Bergvall). Romênia de Gheorghe Hagi em processo inicial de transição defensiva.
+   - **SAFE:** Suécia Vence (Moneyline) (FAS 94 | DQ HIGH | VERY_HIGH | Risco LOW)
+   - **SAFE+:** Suécia 2+ Gols (Team Total Over 1.5) (FAS 89 | DQ HIGH | Risco LOW_MEDIUM)
+   - **ATTACK:** Suécia Vence o 1º Tempo (FAS 83 | DQ HIGH | Risco MEDIUM)
+   - **Status:** `PENDING`
+
+4. **Vila Nova × Londrina** (Brasileirão Série B - 20:30 BRT)
+   - *Tese:* Vila Nova luta pelo título e liderança da Série B com o estádio OBA lotado. Londrina afundado no Z-4 com sérias limitações defensivas fora de casa.
+   - **SAFE:** Vila Nova ou Empate (Dupla Chance 1X) (FAS 92 | DQ HIGH | VERY_HIGH | Risco LOW)
+   - **SAFE+:** Vila Nova Vence (Moneyline) (FAS 85 | DQ HIGH | Risco LOW_MEDIUM)
+   - **ATTACK:** Menos de 2.5 Gols (FAS 80 | DQ HIGH | Risco MEDIUM)
+   - **Status:** `PENDING`
+
+5. **Polônia × Bósnia e Herzegovina** (UEFA Nations League - Liga B - 15:45 BRT)
+   - *Tese:* Polônia no Stadion Narodowy com Lewandowski, Zieliński e Kiwior. Histórico amplamente favorável em casa contra os bósnios em jogos de ciclo competitivo.
+   - **SAFE:** Polônia ou Empate (Dupla Chance 1X) (FAS 91 | DQ HIGH | VERY_HIGH | Risco LOW)
+   - **SAFE+:** Menos de 3.5 Gols (FAS 86 | DQ HIGH | Risco LOW_MEDIUM)
+   - **ATTACK:** Polônia Vence (Moneyline) (FAS 82 | DQ HIGH | Risco MEDIUM)
+   - **Status:** `PENDING`
+
+#### 3. 👴 APOSENTAR O NETO — Principais Linhas (Scanner Completo)
+
+**Turquia × França**
+- 🔥🔥🔥 Mais de 1.5 Gols — 96
+- 🔥🔥 França Vence — 89
+- 🔥 França 2+ Gols (Team Over 1.5) — 85
+- 🔥 Ambos Marcam - Sim — 83
+- 🟢 Mais de 2.5 Gols — 81
+- 🟢 França ou Empate — 94
+
+**Itália × Bélgica**
+- 🔥🔥🔥 Itália ou Empate (1X) — 95
+- 🔥🔥 Menos de 3.5 Gols — 89
+- 🔥 Itália Vence — 88
+- 🔥 Itália Vence + Menos de 3.5 Gols — 84
+- 🟢 Menos de 2.5 Gols — 80
+- 🟢 Bélgica Menos de 1.5 Gols — 87
+
+**Suécia × Romênia**
+- 🔥🔥🔥 Suécia Vence — 94
+- 🔥🔥 Suécia 2+ Gols (Team Over 1.5) — 89
+- 🔥 Suécia ou Empate (1X) — 98
+- 🔥 Suécia Vence 1º Tempo — 83
+- 🟢 Mais de 2.5 Gols — 82
+- 🟢 Gyökeres Marca a Qualquer Momento — 80
+
+**Vila Nova × Londrina**
+- 🔥🔥🔥 Vila Nova ou Empate (1X) — 92
+- 🔥🔥 Menos de 2.5 Gols — 86
+- 🔥 Vila Nova Vence — 85
+- 🟢 Menos de 1.5 Gols — 78
+- 🟢 Ambos Marcam - Não — 83
+
+**Polônia × Bósnia e Herzegovina**
+- 🔥🔥🔥 Polônia ou Empate (1X) — 91
+- 🔥🔥 Menos de 3.5 Gols — 86
+- 🔥 Polônia Vence — 82
+- 🟢 Ambos Marcam - Não — 79
+- 🟢 Lewandowski Marca a Qualquer Momento — 78
+
+#### 4. Bilhetes Combinados / Múltiplas do Dia (Arquitetura Modular Rankeada)
+
+*   🎫 **MÚLTIPLA 1 — SAFE (Formato Modular com Stop Points):**
+    *   🥇 **#1 [ÂNCORA PRIMÁRIA]:** Turquia × França — Mais de 1.5 Gols (FAS 96)
+    *   🥈 **#2 [ÂNCORA SECUNDÁRIA]:** Itália × Bélgica — Itália ou Empate (1X) (FAS 95)
+    *   🟢 **STOP POINT 1 ➔ DUPLA ÂNCORA (Top 1 + Top 2):** França Over 1.5 + Itália 1X *(Recomendado se a cotação combinada for satisfatória)*.
+    *   🥉 **#3 [EXPANSÃO TRIPLA]:** Suécia × Romênia — Suécia Vence (FAS 94)
+    *   🟡 **STOP POINT 2 ➔ TRIPLA EQUILIBRADA (Top 1 + Top 2 + Top 3)**
+    *   🏅 **#4 [EXPANSÃO QUÁDRUPLA]:** Vila Nova × Londrina — Vila Nova ou Empate (1X) (FAS 92)
+    *   🏅 **#5 [EXPANSÃO COMPLETA]:** Polônia × Bósnia — Polônia ou Empate (1X) (FAS 91)
+    *   🔴 **STOP POINT 3 ➔ MÚLTIPLA COMPLETA (Top 5)**
+    *   **Status:** `PENDING`
+
+*   🎫 **MÚLTIPLA 2 — SAFE+ (Formato Modular):**
+    *   🥇 #1 Turquia × França: França Vence (ML)
+    *   🥈 #2 Suécia × Romênia: Suécia 2+ Gols (Team Over 1.5)
+    *   🟢 **STOP POINT 1 ➔ Dupla SAFE+**
+    *   🥉 #3 Itália × Bélgica: Itália Vence (ML)
+    *   🟡 **STOP POINT 2 ➔ Tripla SAFE+**
+    *   🏅 #4 Polônia Menos de 3.5 + Vila Nova Vence (ML)
+    *   🔴 **STOP POINT 3 ➔ Completa SAFE+**
+    *   **Status:** `PENDING`
+
+*   🎫 **MÚLTIPLA 3 — ATTACK / PRA CIMA (Tripla de Alta Assimetria):**
+    *   Turquia × França: França 2+ Gols (Team Over 1.5)
+    *   Suécia × Romênia: Suécia Vence o 1º Tempo
+    *   Itália × Bélgica: Itália Vence + Menos de 3.5 Gols
+    *   **Status:** `PENDING`
+
+*   🎫 **MÚLTIPLA 4 — APOSENTAR O NETO (Alavancagem Máxima da Rodada):**
+    *   França Over 1.5 Team + Suécia 1ºT + Itália ML & Under 3.5 + Vila Nova ML & Under 2.5.
+    *   **Status:** `PENDING`
+
+#### 5. ⏰ Protocolo de Lembrete T-60min
+*   **Primeiro Bloco (Nations League):** 15:45 BRT ➔ Lembrete às **14:45 BRT**
+*   **Segundo Bloco (Série B):** 20:30 BRT ➔ Lembrete às **19:30 BRT**
+*   **Checklist:** Escalações oficiais, confirmação de Mbappé, Gyökeres e escalação da Azzurra.
+
 
 
