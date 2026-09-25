@@ -104,6 +104,37 @@ def print_pinnacle_slip(tickets: List[Dict[str, Any]]):
             print(f"      ➔ Linha: {s['selection']} (Odd Pinnacle: @{s['odd']})")
         print(f"   👉 No boletim à direita, clique na aba 'ACUMULADA' / 'PARLAY' e confirme!")
 
+def print_soros_slip():
+    import os
+    state_file = os.path.join(os.path.dirname(__file__), "soros_state.json")
+    if not os.path.exists(state_file):
+        return
+    with open(state_file, "r", encoding="utf-8") as f:
+        state = json.load(f)
+        
+    day = state.get("currentDay", 1)
+    stake = state.get("currentStake", 10.0)
+    target_days = state.get("targetDays", 30)
+    
+    # Seleção do Soros: Âncora de Máxima Proteção da Rodada (Dupla Âncora SAFE)
+    # França Over 1.5 (@1.21) ou França ML (@1.39) + Itália AH +0.5 (@1.39)
+    # Para Soros, usamos a proteção de elite do FAS
+    mult = 1.39 * 1.39  # @1.93 na Pinnacle
+    ret = stake * mult
+    
+    print("\n" + "="*55)
+    print(f"🔥 DESAFIO SOROS FAS 30 DIAS — DIA {day} DE {target_days}")
+    print("="*55)
+    print(f"💵 Entrada de Hoje: R$ {stake:.2f} (Tudo o que temos da jornada)")
+    print(f"🎯 Cotação da Dupla Âncora: @{mult:.2f} (Pinnacle)")
+    print(f"💰 Retorno Estimado se Bater: R$ {ret:.2f}")
+    print(f"🚀 Próximo Passo: Se GREEN, os R$ {ret:.2f} serão a entrada do DIA {day + 1}!")
+    print("\n📌 Seleções Obrigatórias do Soros:")
+    print("   1️⃣ Turquia x França ➔ França Vence (Odd @1.39)")
+    print("   2️⃣ Itália x Bélgica ➔ Handicap Asiático: Itália (+0.5) (Odd @1.39)")
+    print("   👉 Na Pinnacle: Adicione os dois, vá na aba ACUMULADA e coloque R$ 10,00!")
+    print("="*55)
+
 if __name__ == "__main__":
     matches = get_nations_league_odds()
     target_fixtures = ["Turkey", "Italy", "Sweden", "Poland", "Hungary", "Georgia"]
@@ -134,7 +165,7 @@ if __name__ == "__main__":
                 },
                 {
                     "match": "Itália x Bélgica (UEFA Nations League - 15:45 BRT)",
-                    "market_group": "Handicap / Handicap Asiático (NUNCA usar 'Chance Dupla' que bloqueia na Pinnacle!)",
+                    "market_group": "Handicap / Handicap Asiático",
                     "selection": "Itália (+0.5) [Equivalente exato a 1X / Dupla Chance]",
                     "odd": 1.39
                 }
@@ -166,4 +197,6 @@ if __name__ == "__main__":
         }
     ]
     print_pinnacle_slip(pinnacle_tickets)
+    print_soros_slip()
+
 

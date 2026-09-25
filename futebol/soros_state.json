@@ -1,0 +1,21 @@
+{
+  "project": "FAS 3 - DESAFIO SOROS 30 DIAS",
+  "startDate": "2026-09-25",
+  "initialStake": 10.0,
+  "currentStake": 10.0,
+  "currentDay": 1,
+  "targetDays": 30,
+  "status": "ACTIVE",
+  "vaultProfit": 0.0,
+  "history": [
+    {
+      "day": 1,
+      "date": "2026-09-25",
+      "stakeIn": 10.0,
+      "selection": "Turquia x França (Over 1.5) + Itália x Bélgica (Itália +0.5)",
+      "odd": 1.93,
+      "potentialReturn": 19.32,
+      "status": "PENDING"
+    }
+  ]
+}

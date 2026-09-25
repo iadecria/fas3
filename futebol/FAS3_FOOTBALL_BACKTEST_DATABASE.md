@@ -458,5 +458,17 @@ Nesta modalidade, cada categoria forma um bilhete único (múltipla/parlay) comb
 *   **Segundo Bloco (Série B):** 20:30 BRT ➔ Lembrete às **19:30 BRT**
 *   **Checklist:** Escalações oficiais, confirmação de Mbappé, Gyökeres e escalação da Azzurra.
 
+#### 6. 🔥 DESAFIO SOROS FAS 30 DIAS — REGISTRO OFICIAL
+*   **Dia da Jornada:** **DIA 1 DE 30**
+*   **Banca Inicial do Projeto:** R$ 10,00
+*   **Entrada de Hoje:** R$ 10,00
+*   **Seleção Oficial do Soros:** 
+    *   Turquia × França: França Vence (Odd Pinnacle: @1.39)
+    *   Itália × Bélgica: Handicap Asiático Itália (+0.5) (Odd Pinnacle: @1.39)
+*   **Multiplicador Acumulado:** **@1.932**
+*   **Retorno Estimado para o Dia 2:** **R$ 19,32**
+*   **Status de Liquidação:** `PENDING`
+
+
 
 
