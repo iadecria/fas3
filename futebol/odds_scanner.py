@@ -124,7 +124,7 @@ if __name__ == "__main__":
     pinnacle_tickets = [
         {
             "title": "BILHETE 1: DUPLA ÂNCORA (SAFE - Menor Risco)",
-            "multiplier": 1.39 * 1.39,  # França ML @1.39 x Itália 1X @1.39 = ~1.93
+            "multiplier": 1.39 * 1.39,  # França ML @1.39 x Itália AH +0.5 @1.39 = ~1.93
             "legs": [
                 {
                     "match": "Turquia x França (UEFA Nations League - 15:45 BRT)",
@@ -134,8 +134,8 @@ if __name__ == "__main__":
                 },
                 {
                     "match": "Itália x Bélgica (UEFA Nations League - 15:45 BRT)",
-                    "market_group": "Dupla Chance / Hipótese Dupla",
-                    "selection": "Itália ou Empate (1X)",
+                    "market_group": "Handicap / Handicap Asiático (NUNCA usar 'Chance Dupla' que bloqueia na Pinnacle!)",
+                    "selection": "Itália (+0.5) [Equivalente exato a 1X / Dupla Chance]",
                     "odd": 1.39
                 }
             ]
@@ -152,8 +152,8 @@ if __name__ == "__main__":
                 },
                 {
                     "match": "Itália x Bélgica (15:45 BRT)",
-                    "market_group": "Dupla Chance",
-                    "selection": "Itália ou Empate (1X)",
+                    "market_group": "Handicap Asiático",
+                    "selection": "Itália (+0.5) [Equivalente exato a 1X]",
                     "odd": 1.39
                 },
                 {

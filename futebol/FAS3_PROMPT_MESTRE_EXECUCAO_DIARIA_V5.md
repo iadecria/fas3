@@ -455,6 +455,26 @@ Para qualquer bilhete/múltipla aprovada na rodada:
      - **ALTERAR:** Indicar substituição de seleção ou redução de linha caso surja ruído pontual.
      - **CANCELAR / ABORTAR BILHETE:** Se houver desfalque crítico ou mudança drástica de game state (ex: time poupando 100% dos titulares).
 
+
+# 26C. 🏦 PROTOCOLO PÓS-VALIDAÇÃO: INTEGRAÇÃO DE ODDS & BOLETIM COMERCIAL
+
+A integração com APIs de apostas (The Odds API / Pinnacle) opera estritamente sob o princípio de **Isolamento de Fases**:
+
+1. **Fase 1 — Análise e Validação Pura do FAS (Obrigatório e Pré-Odds):**
+   - O FAS executa 100% da sua metodologia matemática, game state, discovery, contrary signals e ranking SAFE/ATTACK sem qualquer viés de odd comercial.
+   - O snapshot é congelado e salvo no banco de backtest.
+
+2. **Fase 2 — Pós-Validação & Formatação Comercial (Somente após FAS concluído):**
+   - Somente após o relatório e o snapshot do FAS estarem aprovados e validados, o sistema dispara o script de odds (`odds_scanner.py`).
+   - O script consulta as cotações em tempo real nas casas (Pinnacle, Betfair, Bet365, Betano) para as seleções exatas do FAS.
+   - **Regra de Conversão de Mercado (Pinnacle Rule):**
+     - Na Pinnacle, mercados rotulados como *Special* (como "Chance Dupla") são proibidos em acumuladas/parlays.
+     - O sistema deve **automaticamente converter** a seleção para a Linha Principal correspondente:
+       - `Dupla Chance 1X (Mandante ou Empate)` ➔ **`Handicap Asiático: Mandante (+0.5)`**
+       - `Dupla Chance X2 (Visitante ou Empate)` ➔ **`Handicap Asiático: Visitante (+0.5)`**
+     - O Handicap Asiático (+0.5) tem equivalência matemática idêntica e desbloqueia a emissão da Acumulada/Parlay na Pinnacle.
+   - O sistema emite o Boletim Comercial com as cotações consolidadas e instruções de clique por casa.
+
 # 27. COMANDO PADRÃO
 
 Se eu disser **"Rode o FAS de hoje"**: - identifique a data; - pesquise
